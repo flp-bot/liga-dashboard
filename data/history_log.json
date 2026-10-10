@@ -1,0 +1,731 @@
+[
+  {
+    "Timestamp": "2026-09-08 01:47:15",
+    "Date": "2026-09-08",
+    "TotalCards": "730",
+    "MinPriceBRL": "3848.97",
+    "AvgPriceBRL": "7023.24",
+    "MaxPriceBRL": "19826.17",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-08 01:51:24",
+    "Date": "2026-09-08",
+    "TotalCards": "730",
+    "MinPriceBRL": "3848.97",
+    "AvgPriceBRL": "7023.24",
+    "MaxPriceBRL": "19826.17",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-08 01:53:34",
+    "Date": "2026-09-08",
+    "TotalCards": "730",
+    "MinPriceBRL": "3848.97",
+    "AvgPriceBRL": "7023.24",
+    "MaxPriceBRL": "19826.17",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-08 01:55:31",
+    "Date": "2026-09-08",
+    "TotalCards": "730",
+    "MinPriceBRL": "3848.97",
+    "AvgPriceBRL": "7023.24",
+    "MaxPriceBRL": "19826.17",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-08 02:07:34",
+    "Date": "2026-09-08",
+    "TotalCards": "730",
+    "MinPriceBRL": "3848.97",
+    "AvgPriceBRL": "7023.24",
+    "MaxPriceBRL": "19826.17",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-08 02:09:33",
+    "Date": "2026-09-08",
+    "TotalCards": "730",
+    "MinPriceBRL": "3848.97",
+    "AvgPriceBRL": "7023.24",
+    "MaxPriceBRL": "19826.17",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-08 21:18:49",
+    "Date": "2026-09-08",
+    "TotalCards": "738",
+    "MinPriceBRL": "4017.34",
+    "AvgPriceBRL": "7366.97",
+    "MaxPriceBRL": "20748.81",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-09 19:51:04",
+    "Date": "2026-09-09",
+    "TotalCards": "738",
+    "MinPriceBRL": "4041.24",
+    "AvgPriceBRL": "7396.46",
+    "MaxPriceBRL": "20734.8",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-09 20:00:01",
+    "Date": "2026-09-09",
+    "TotalCards": "738",
+    "MinPriceBRL": "4041.24",
+    "AvgPriceBRL": "7396.46",
+    "MaxPriceBRL": "20734.8",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-10 01:23:51",
+    "Date": "2026-09-10",
+    "TotalCards": "747",
+    "MinPriceBRL": "4120.01",
+    "AvgPriceBRL": "7546.62",
+    "MaxPriceBRL": "21431.27",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-10 01:27:19",
+    "Date": "2026-09-10",
+    "TotalCards": "747",
+    "MinPriceBRL": "4120.01",
+    "AvgPriceBRL": "7546.62",
+    "MaxPriceBRL": "21431.27",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-10 01:53:02",
+    "Date": "2026-09-10",
+    "TotalCards": "747",
+    "MinPriceBRL": "4120.01",
+    "AvgPriceBRL": "7546.62",
+    "MaxPriceBRL": "21431.27",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-10 20:00:02",
+    "Date": "2026-09-10",
+    "TotalCards": "749",
+    "MinPriceBRL": "4146.7",
+    "AvgPriceBRL": "7591.97",
+    "MaxPriceBRL": "21747.41",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-10 20:36:10",
+    "Date": "2026-09-10",
+    "TotalCards": "755",
+    "MinPriceBRL": "4318.06",
+    "AvgPriceBRL": "7924.79",
+    "MaxPriceBRL": "23211.59",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-10 22:47:35",
+    "Date": "2026-09-10",
+    "TotalCards": "754",
+    "MinPriceBRL": "4115.63",
+    "AvgPriceBRL": "7602.42",
+    "MaxPriceBRL": "22609.69",
+    "BindersCount": "1"
+  },
+  {
+    "Timestamp": "2026-09-11 20:00:02",
+    "Date": "2026-09-11",
+    "TotalCards": "1581",
+    "MinPriceBRL": "6948.43",
+    "AvgPriceBRL": "12283.35",
+    "MaxPriceBRL": "32624.94",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-12 01:11:14",
+    "Date": "2026-09-12",
+    "TotalCards": "1611",
+    "MinPriceBRL": "7421.37",
+    "AvgPriceBRL": "12983.33",
+    "MaxPriceBRL": "34151.7",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-12 20:00:02",
+    "Date": "2026-09-12",
+    "TotalCards": "1611",
+    "MinPriceBRL": "7479.6",
+    "AvgPriceBRL": "12994.91",
+    "MaxPriceBRL": "34087.87",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-13 02:48:19",
+    "Date": "2026-09-13",
+    "TotalCards": "1757",
+    "MinPriceBRL": "7680.58",
+    "AvgPriceBRL": "13337.47",
+    "MaxPriceBRL": "34997.29",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-13 03:46:44",
+    "Date": "2026-09-13",
+    "TotalCards": "1757",
+    "MinPriceBRL": "7605.1",
+    "AvgPriceBRL": "13401.87",
+    "MaxPriceBRL": "35572.93",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-13 20:00:02",
+    "Date": "2026-09-13",
+    "TotalCards": "1757",
+    "MinPriceBRL": "7605.1",
+    "AvgPriceBRL": "13401.87",
+    "MaxPriceBRL": "35572.93",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-14 20:40:29",
+    "Date": "2026-09-14",
+    "TotalCards": "1757",
+    "MinPriceBRL": "7601.24",
+    "AvgPriceBRL": "13381.15",
+    "MaxPriceBRL": "35569.09",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-15 00:00:37",
+    "Date": "2026-09-15",
+    "TotalCards": "1805",
+    "MinPriceBRL": "7779.32",
+    "AvgPriceBRL": "13830.81",
+    "MaxPriceBRL": "36862.78",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-15 01:40:34",
+    "Date": "2026-09-15",
+    "TotalCards": "1852",
+    "MinPriceBRL": "7863.97",
+    "AvgPriceBRL": "13997.25",
+    "MaxPriceBRL": "37178.31",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-15 02:04:01",
+    "Date": "2026-09-15",
+    "TotalCards": "1852",
+    "MinPriceBRL": "7610.95",
+    "AvgPriceBRL": "13938.03",
+    "MaxPriceBRL": "37772.7",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-15 02:17:03",
+    "Date": "2026-09-15",
+    "TotalCards": "1852",
+    "MinPriceBRL": "7787.5",
+    "AvgPriceBRL": "13981.19",
+    "MaxPriceBRL": "37075.81",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-15 20:25:47",
+    "Date": "2026-09-15",
+    "TotalCards": "1852",
+    "MinPriceBRL": "7787.5",
+    "AvgPriceBRL": "13981.19",
+    "MaxPriceBRL": "37075.81",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-16 20:00:02",
+    "Date": "2026-09-16",
+    "TotalCards": "1853",
+    "MinPriceBRL": "7808.44",
+    "AvgPriceBRL": "13926.08",
+    "MaxPriceBRL": "37133.09",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-17 20:00:02",
+    "Date": "2026-09-17",
+    "TotalCards": "1853",
+    "MinPriceBRL": "7831.4",
+    "AvgPriceBRL": "13975.36",
+    "MaxPriceBRL": "37077.49",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-18 20:00:02",
+    "Date": "2026-09-18",
+    "TotalCards": "1860",
+    "MinPriceBRL": "7811.5",
+    "AvgPriceBRL": "14005.9",
+    "MaxPriceBRL": "37077.03",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-19 03:15:15",
+    "Date": "2026-09-19",
+    "TotalCards": "1955",
+    "MinPriceBRL": "8062.58",
+    "AvgPriceBRL": "14394.83",
+    "MaxPriceBRL": "37710.22",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-19 20:00:02",
+    "Date": "2026-09-19",
+    "TotalCards": "1955",
+    "MinPriceBRL": "8062.58",
+    "AvgPriceBRL": "14394.83",
+    "MaxPriceBRL": "37710.22",
+    "BindersCount": "7"
+  },
+  {
+    "Timestamp": "2026-09-20 05:18:06",
+    "Date": "2026-09-20",
+    "TotalCards": "2074",
+    "MinPriceBRL": "11140.27",
+    "AvgPriceBRL": "19466.06",
+    "MaxPriceBRL": "48742.26",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-20 20:00:02",
+    "Date": "2026-09-20",
+    "TotalCards": "2074",
+    "MinPriceBRL": "11140.27",
+    "AvgPriceBRL": "19466.06",
+    "MaxPriceBRL": "48742.26",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-21 20:00:02",
+    "Date": "2026-09-21",
+    "TotalCards": "2061",
+    "MinPriceBRL": "11140.27",
+    "AvgPriceBRL": "19466.06",
+    "MaxPriceBRL": "48742.26",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-22 01:40:48",
+    "Date": "2026-09-22",
+    "TotalCards": "2069",
+    "MinPriceBRL": "11257.08",
+    "AvgPriceBRL": "19637.16",
+    "MaxPriceBRL": "49005.86",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-22 02:51:12",
+    "Date": "2026-09-22",
+    "TotalCards": "2069",
+    "MinPriceBRL": "10926.39",
+    "AvgPriceBRL": "19672.94",
+    "MaxPriceBRL": "49457.31",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-22 20:33:08",
+    "Date": "2026-09-22",
+    "TotalCards": "2082",
+    "MinPriceBRL": "10938.62",
+    "AvgPriceBRL": "19704.59",
+    "MaxPriceBRL": "49550.41",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-22 22:04:02",
+    "Date": "2026-09-22",
+    "TotalCards": "2095",
+    "MinPriceBRL": "11000.77",
+    "AvgPriceBRL": "19818.71",
+    "MaxPriceBRL": "49724.33",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-23 00:13:19",
+    "Date": "2026-09-23",
+    "TotalCards": "2095",
+    "MinPriceBRL": "11000.77",
+    "AvgPriceBRL": "19818.71",
+    "MaxPriceBRL": "49724.33",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-23 20:00:02",
+    "Date": "2026-09-23",
+    "TotalCards": "2127",
+    "MinPriceBRL": "11393.42",
+    "AvgPriceBRL": "20030.28",
+    "MaxPriceBRL": "51081.55",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-23 22:59:50",
+    "Date": "2026-09-23",
+    "TotalCards": "2153",
+    "MinPriceBRL": "11564.41",
+    "AvgPriceBRL": "20354.73",
+    "MaxPriceBRL": "51761.26",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-23 23:41:59",
+    "Date": "2026-09-23",
+    "TotalCards": "2185",
+    "MinPriceBRL": "11594.06",
+    "AvgPriceBRL": "20416.91",
+    "MaxPriceBRL": "51896.56",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-24 20:00:02",
+    "Date": "2026-09-24",
+    "TotalCards": "2185",
+    "MinPriceBRL": "11394.0",
+    "AvgPriceBRL": "20106.81",
+    "MaxPriceBRL": "51803.28",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-24 23:02:47",
+    "Date": "2026-09-24",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11697.61",
+    "AvgPriceBRL": "20619.07",
+    "MaxPriceBRL": "52685.23",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-25 20:00:02",
+    "Date": "2026-09-25",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11556.99",
+    "AvgPriceBRL": "20387.19",
+    "MaxPriceBRL": "52459.05",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-26 16:02:38",
+    "Date": "2026-09-26",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11356.88",
+    "AvgPriceBRL": "20283.53",
+    "MaxPriceBRL": "52541.18",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-26 20:00:02",
+    "Date": "2026-09-26",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11346.52",
+    "AvgPriceBRL": "20277.84",
+    "MaxPriceBRL": "52546.14",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-27 01:16:14",
+    "Date": "2026-09-27",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11346.52",
+    "AvgPriceBRL": "20277.84",
+    "MaxPriceBRL": "52546.14",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-27 20:00:02",
+    "Date": "2026-09-27",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11243.34",
+    "AvgPriceBRL": "20212.4",
+    "MaxPriceBRL": "52306.78",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-28 20:00:02",
+    "Date": "2026-09-28",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11202.79",
+    "AvgPriceBRL": "20241.41",
+    "MaxPriceBRL": "61439.14",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-28 22:55:11",
+    "Date": "2026-09-28",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11202.79",
+    "AvgPriceBRL": "20241.41",
+    "MaxPriceBRL": "61439.14",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-29 20:00:02",
+    "Date": "2026-09-29",
+    "TotalCards": "2260",
+    "MinPriceBRL": "11132.06",
+    "AvgPriceBRL": "20128.71",
+    "MaxPriceBRL": "61340.91",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-29 21:31:07",
+    "Date": "2026-09-29",
+    "TotalCards": "2272",
+    "MinPriceBRL": "11166.13",
+    "AvgPriceBRL": "20201.22",
+    "MaxPriceBRL": "61502.46",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-29 22:24:18",
+    "Date": "2026-09-29",
+    "TotalCards": "2277",
+    "MinPriceBRL": "11262.29",
+    "AvgPriceBRL": "20334.44",
+    "MaxPriceBRL": "61916.95",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-30 20:00:02",
+    "Date": "2026-09-30",
+    "TotalCards": "2277",
+    "MinPriceBRL": "11042.56",
+    "AvgPriceBRL": "20136.44",
+    "MaxPriceBRL": "61945.26",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-09-30 22:35:56",
+    "Date": "2026-09-30",
+    "TotalCards": "2346",
+    "MinPriceBRL": "11531.07",
+    "AvgPriceBRL": "21042.94",
+    "MaxPriceBRL": "64525.89",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-01 22:08:14",
+    "Date": "2026-10-01",
+    "TotalCards": "2346",
+    "MinPriceBRL": "11453.9",
+    "AvgPriceBRL": "20836.5",
+    "MaxPriceBRL": "64555.19",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-01 23:46:18",
+    "Date": "2026-10-01",
+    "TotalCards": "2364",
+    "MinPriceBRL": "11979.01",
+    "AvgPriceBRL": "21530.09",
+    "MaxPriceBRL": "65488.22",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-02 01:09:06",
+    "Date": "2026-10-02",
+    "TotalCards": "2416",
+    "MinPriceBRL": "12321.49",
+    "AvgPriceBRL": "22078.16",
+    "MaxPriceBRL": "66422.98",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-02 20:05:58",
+    "Date": "2026-10-02",
+    "TotalCards": "2416",
+    "MinPriceBRL": "12269.59",
+    "AvgPriceBRL": "22028.11",
+    "MaxPriceBRL": "66403.55",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-02 23:46:26",
+    "Date": "2026-10-02",
+    "TotalCards": "2454",
+    "MinPriceBRL": "12571.93",
+    "AvgPriceBRL": "22545.02",
+    "MaxPriceBRL": "67444.91",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-02 23:55:38",
+    "Date": "2026-10-02",
+    "TotalCards": "2454",
+    "MinPriceBRL": "12571.93",
+    "AvgPriceBRL": "22545.02",
+    "MaxPriceBRL": "67444.91",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-02 23:58:33",
+    "Date": "2026-10-02",
+    "TotalCards": "2454",
+    "MinPriceBRL": "12571.93",
+    "AvgPriceBRL": "22545.02",
+    "MaxPriceBRL": "67444.91",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-03 02:52:55",
+    "Date": "2026-10-03",
+    "TotalCards": "2502",
+    "MinPriceBRL": "12839.7",
+    "AvgPriceBRL": "22929.17",
+    "MaxPriceBRL": "66995.44",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-03 03:07:52",
+    "Date": "2026-10-03",
+    "TotalCards": "2502",
+    "MinPriceBRL": "12868.61",
+    "AvgPriceBRL": "22971.84",
+    "MaxPriceBRL": "67044.25",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-03 20:00:01",
+    "Date": "2026-10-03",
+    "TotalCards": "2510",
+    "MinPriceBRL": "12924.67",
+    "AvgPriceBRL": "23076.66",
+    "MaxPriceBRL": "67319.17",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-04 12:17:21",
+    "Date": "2026-10-04",
+    "TotalCards": "2527",
+    "MinPriceBRL": "13035.76",
+    "AvgPriceBRL": "23265.52",
+    "MaxPriceBRL": "68852.89",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-04 16:52:01",
+    "Date": "2026-10-04",
+    "TotalCards": "2527",
+    "MinPriceBRL": "13035.76",
+    "AvgPriceBRL": "23265.52",
+    "MaxPriceBRL": "68852.89",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-04 20:00:02",
+    "Date": "2026-10-04",
+    "TotalCards": "2527",
+    "MinPriceBRL": "13035.76",
+    "AvgPriceBRL": "23265.52",
+    "MaxPriceBRL": "68852.89",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-05 20:36:53",
+    "Date": "2026-10-05",
+    "TotalCards": "2527",
+    "MinPriceBRL": "13151.98",
+    "AvgPriceBRL": "23199.68",
+    "MaxPriceBRL": "68797.77",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-06 20:13:19",
+    "Date": "2026-10-06",
+    "TotalCards": "2528",
+    "MinPriceBRL": "13054.49",
+    "AvgPriceBRL": "22911.4",
+    "MaxPriceBRL": "67735.61",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-07 20:52:01",
+    "Date": "2026-10-07",
+    "TotalCards": "2528",
+    "MinPriceBRL": "12988.25",
+    "AvgPriceBRL": "22896.29",
+    "MaxPriceBRL": "67807.88",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-08 00:45:43",
+    "Date": "2026-10-08",
+    "TotalCards": "2573",
+    "MinPriceBRL": "13708.97",
+    "AvgPriceBRL": "23860.13",
+    "MaxPriceBRL": "68972.16",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-08 01:04:50",
+    "Date": "2026-10-08",
+    "TotalCards": "2573",
+    "MinPriceBRL": "13708.97",
+    "AvgPriceBRL": "23860.13",
+    "MaxPriceBRL": "68972.16",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-08 21:36:03",
+    "Date": "2026-10-08",
+    "TotalCards": "2612",
+    "MinPriceBRL": "13655.18",
+    "AvgPriceBRL": "23933.91",
+    "MaxPriceBRL": "69901.93",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-08 22:16:55",
+    "Date": "2026-10-08",
+    "TotalCards": "2626",
+    "MinPriceBRL": "13840.99",
+    "AvgPriceBRL": "24205.39",
+    "MaxPriceBRL": "70570.38",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-08 23:19:22",
+    "Date": "2026-10-08",
+    "TotalCards": "2646",
+    "MinPriceBRL": "14156.73",
+    "AvgPriceBRL": "24601.45",
+    "MaxPriceBRL": "71073.76",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-09 20:20:30",
+    "Date": "2026-10-09",
+    "TotalCards": "2646",
+    "MinPriceBRL": "14064.49",
+    "AvgPriceBRL": "24544.13",
+    "MaxPriceBRL": "70787.52",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-10 11:28:34",
+    "Date": "2026-10-10",
+    "TotalCards": "2690",
+    "MinPriceBRL": "14503.23",
+    "AvgPriceBRL": "25270.11",
+    "MaxPriceBRL": "73217.15",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-10 16:05:52",
+    "Date": "2026-10-10",
+    "TotalCards": "2690",
+    "MinPriceBRL": "14503.23",
+    "AvgPriceBRL": "25270.11",
+    "MaxPriceBRL": "73217.15",
+    "BindersCount": "8"
+  }
+]

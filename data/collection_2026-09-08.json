@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-09-08 01:53:34",
+  "date": "2026-09-08",
+  "summary": {
+    "menor_preco_brl": 3848.97,
+    "preco_medio_brl": 7023.24,
+    "maior_preco_brl": 19826.17,
+    "total_cards": 730
+  },
+  "binders": [
+    {
+      "name": "Minhas Coleções",
+      "cards_count": 730,
+      "min_price_brl": 3848.97,
+      "max_price_brl": 7023.24
+    }
+  ],
+  "breakdowns": {
+    "languages": {
+      "Português": 695,
+      "Chinês (S)": 18,
+      "Japonês": 11,
+      "Inglês": 6
+    },
+    "qualities": {
+      "Near Mint (NM)": 709,
+      "Mint (M)": 12,
+      "Slightly Played (SP)": 4,
+      "Moderately Played (MP)": 2,
+      "Damaged (D)": 2
+    },
+    "rarities": {
+      "Comum": 315,
+      "Incomum": 184,
+      "Rara": 83,
+      "Promocional": 69,
+      "Rara Dupla": 31,
+      "Ilustração Rara": 23,
+      "Rara Ultra": 16,
+      "Rara Holográfica": 3,
+      "ACE SPEC": 3,
+      "Ilustração Rara Especial": 2,
+      "Rara Radiante": 1
+    },
+    "extras": {
+      "Reverse Foil": 176,
+      "Foil": 170,
+      "Promo": 60,
+      "Pre Release": 10,
+      "Pokeball Foil": 6,
+      "Master Ball": 1
+    },
+    "price_ranges": {
+      "Até R$ 5,00": 624,
+      "R$ 5,00 a R$ 50,00": 92,
+      "R$ 50,00 a R$ 150,00": 18,
+      "R$ 150,00 a R$ 300,00": 1
+    },
+    "sets": {
+      "Escuridão Absoluta": 316,
+      "Caos Ascendente": 142,
+      "Equilíbrio Perfeito": 106,
+      "Mega Evolution Promos": 50,
+      "Rivais Predestinados": 36,
+      "Collection 151": 9,
+      "Gem Pack Volume 4": 9,
+      "Play! Pokémon Prize Pack S..": 1,
+      "Pokemon GO (JP)": 9,
+      "Heróis Excelsos": 8,
+      "Holiday Calendar 2025": 7,
+      "Fogo Fantasmagórico": 3,
+      "Celebrações": 2,
+      "Escarlate e Violeta Prom..": 2,
+      "Megaevolução": 2,
+      "Raio Preto": 2,
+      "Abyss Eye": 1,
+      "Amigos de Jornada": 1,
+      "Céus em Evolução": 1,
+      "Céus Estrondosos": 1,
+      "Coroa Estelar": 1,
+      "Destinos de Paldea": 1,
+      "Energia Básica - Escarlate..": 1,
+      "Fábulas Nebulosas": 1,
+      "Fagulhas Impetuosas": 1,
+      "Legendary Collection": 1,
+      "Máscaras do Crepúsculo": 1,
+      "MEGA Dream ex": 1,
+      "Neo Revelation": 1,
+      "Pokemon GO": 1,
+      "Team Rocket Returns": 1,
+      "Tempestade Celestial": 1,
+      "Unseen Forces": 1
+    }
+  }
+}

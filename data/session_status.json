@@ -1,0 +1,12 @@
+{
+  "cookies_exist": true,
+  "cookies_count": 6,
+  "last_cookie_update": "10/10/2026 16:06:26",
+  "email": "fe0rkut@gmail.com",
+  "email_masked": "fe***t@gmail.com",
+  "task_state": {
+    "is_running": false,
+    "current_task": null,
+    "last_result": null
+  }
+}

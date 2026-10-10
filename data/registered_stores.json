@@ -1,0 +1,12 @@
+{
+  "stores": [
+    {
+      "id": "pacdeck",
+      "name": "pacdeck",
+      "url": "https://www.pacdeck.com.br/?view=ecom%2Fitens&id=662762&page=1&tcg=2&txt_estoque=1&ultimas=1&txt_carta=&txt_edicao=&btBuscar=Buscar",
+      "enabled": true,
+      "last_scraped": "2026-10-10 11:44:02",
+      "cards_count": 30
+    }
+  ]
+}

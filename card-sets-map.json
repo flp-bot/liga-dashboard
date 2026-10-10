@@ -1,0 +1,1515 @@
+{
+  "miscellaneous promos": {
+    "serie": "miscp",
+    "set": "miscp"
+  },
+  "base set": {
+    "serie": "base",
+    "set": "base1"
+  },
+  "jungle": {
+    "serie": "base",
+    "set": "base2"
+  },
+  "wizards black star promos": {
+    "serie": "basep",
+    "set": "basep"
+  },
+  "w promotional": {
+    "serie": "wp",
+    "set": "wp"
+  },
+  "fossil": {
+    "serie": "base",
+    "set": "base3"
+  },
+  "jumbo cards": {
+    "serie": "jumbo",
+    "set": "jumbo"
+  },
+  "base set 2": {
+    "serie": "base",
+    "set": "base4"
+  },
+  "team rocket": {
+    "serie": "base",
+    "set": "base5"
+  },
+  "gym heroes": {
+    "serie": "gym",
+    "set": "gym1"
+  },
+  "gym challenge": {
+    "serie": "gym",
+    "set": "gym2"
+  },
+  "neo genesis": {
+    "serie": "neo",
+    "set": "neo1"
+  },
+  "neo discovery": {
+    "serie": "neo",
+    "set": "neo2"
+  },
+  "southern islands": {
+    "serie": "si",
+    "set": "si1"
+  },
+  "neo revelation": {
+    "serie": "neo",
+    "set": "neo3"
+  },
+  "neo destiny": {
+    "serie": "neo",
+    "set": "neo4"
+  },
+  "legendary collection": {
+    "serie": "base",
+    "set": "base6"
+  },
+  "sample": {
+    "serie": "sp",
+    "set": "sp"
+  },
+  "expedition base set": {
+    "serie": "ecard",
+    "set": "ecard1"
+  },
+  "best of game": {
+    "serie": "bog",
+    "set": "bog"
+  },
+  "aquapolis": {
+    "serie": "ecard",
+    "set": "ecard2"
+  },
+  "skyridge": {
+    "serie": "ecard",
+    "set": "ecard3"
+  },
+  "ruby  sapphire": {
+    "serie": "ex",
+    "set": "ex1"
+  },
+  "sandstorm": {
+    "serie": "ex",
+    "set": "ex2"
+  },
+  "nintendo black star promos": {
+    "serie": "np",
+    "set": "np"
+  },
+  "dragon": {
+    "serie": "ex",
+    "set": "ex3"
+  },
+  "team magma vs team aqua": {
+    "serie": "ex",
+    "set": "ex4"
+  },
+  "hidden legends": {
+    "serie": "ex",
+    "set": "ex5"
+  },
+  "ex trainer kit latias": {
+    "serie": "tk",
+    "set": "tk-ex-latia"
+  },
+  "ex trainer kit latios": {
+    "serie": "tk",
+    "set": "tk-ex-latio"
+  },
+  "poke card creator pack": {
+    "serie": "ex",
+    "set": "ex5.5"
+  },
+  "firered  leafgreen": {
+    "serie": "ex",
+    "set": "ex6"
+  },
+  "pop series 1": {
+    "serie": "pop",
+    "set": "pop1"
+  },
+  "team rocket returns": {
+    "serie": "ex",
+    "set": "ex7"
+  },
+  "deoxys": {
+    "serie": "ex",
+    "set": "ex8"
+  },
+  "emerald": {
+    "serie": "ex",
+    "set": "ex9"
+  },
+  "pop series 2": {
+    "serie": "pop",
+    "set": "pop2"
+  },
+  "unseen forces": {
+    "serie": "ex",
+    "set": "ex10"
+  },
+  "unseen forces unown collection": {
+    "serie": "exu",
+    "set": "exu"
+  },
+  "delta species": {
+    "serie": "ex",
+    "set": "ex11"
+  },
+  "legend maker": {
+    "serie": "ex",
+    "set": "ex12"
+  },
+  "ex trainer kit 2 minun": {
+    "serie": "tk",
+    "set": "tk-ex-m"
+  },
+  "ex trainer kit 2 plusle": {
+    "serie": "tk",
+    "set": "tk-ex-p"
+  },
+  "pop series 3": {
+    "serie": "pop",
+    "set": "pop3"
+  },
+  "holon phantoms": {
+    "serie": "ex",
+    "set": "ex13"
+  },
+  "pop series 4": {
+    "serie": "pop",
+    "set": "pop4"
+  },
+  "crystal guardians": {
+    "serie": "ex",
+    "set": "ex14"
+  },
+  "dragon frontiers": {
+    "serie": "ex",
+    "set": "ex15"
+  },
+  "power keepers": {
+    "serie": "ex",
+    "set": "ex16"
+  },
+  "pop series 5": {
+    "serie": "pop",
+    "set": "pop5"
+  },
+  "dp black star promos": {
+    "serie": "dpp",
+    "set": "dpp"
+  },
+  "diamond  pearl": {
+    "serie": "dp",
+    "set": "dp1"
+  },
+  "mysterious treasures": {
+    "serie": "dp",
+    "set": "dp2"
+  },
+  "dp trainer kit lucario": {
+    "serie": "tk",
+    "set": "tk-dp-l"
+  },
+  "dp trainer kit manaphy": {
+    "serie": "tk",
+    "set": "tk-dp-m"
+  },
+  "pop series 6": {
+    "serie": "pop",
+    "set": "pop6"
+  },
+  "secret wonders": {
+    "serie": "dp",
+    "set": "dp3"
+  },
+  "great encounters": {
+    "serie": "dp",
+    "set": "dp4"
+  },
+  "pop series 7": {
+    "serie": "pop",
+    "set": "pop7"
+  },
+  "majestic dawn": {
+    "serie": "dp",
+    "set": "dp5"
+  },
+  "legends awakened": {
+    "serie": "dp",
+    "set": "dp6"
+  },
+  "pop series 8": {
+    "serie": "pop",
+    "set": "pop8"
+  },
+  "stormfront": {
+    "serie": "dp",
+    "set": "dp7"
+  },
+  "platinum": {
+    "serie": "dp",
+    "set": "pl1"
+  },
+  "pop series 9": {
+    "serie": "pop",
+    "set": "pop9"
+  },
+  "rising rivals": {
+    "serie": "dp",
+    "set": "pl2"
+  },
+  "supreme victors": {
+    "serie": "dp",
+    "set": "pl3"
+  },
+  "arceus": {
+    "serie": "dp",
+    "set": "pl4"
+  },
+  "pokemon rumble": {
+    "serie": "ru",
+    "set": "ru1"
+  },
+  "heartgold soulsilver": {
+    "serie": "hgss",
+    "set": "hgss1"
+  },
+  "hgss black star promos": {
+    "serie": "hgssp",
+    "set": "hgssp"
+  },
+  "hs trainer kit raichu": {
+    "serie": "tk",
+    "set": "tk-hs-r"
+  },
+  "hs trainer kit gyarados": {
+    "serie": "tk",
+    "set": "tk-hs-g"
+  },
+  "unleashed": {
+    "serie": "hgss",
+    "set": "hgss2"
+  },
+  "undaunted": {
+    "serie": "hgss",
+    "set": "hgss3"
+  },
+  "triumphant": {
+    "serie": "hgss",
+    "set": "hgss4"
+  },
+  "call of legends": {
+    "serie": "col",
+    "set": "col1"
+  },
+  "black  white": {
+    "serie": "bw",
+    "set": "bw1"
+  },
+  "bw black star promos": {
+    "serie": "bwp",
+    "set": "bwp"
+  },
+  "mcdonalds collection 2011": {
+    "serie": "sv",
+    "set": "2011bw"
+  },
+  "emerging powers": {
+    "serie": "bw",
+    "set": "bw2"
+  },
+  "bw trainer kit excadrill": {
+    "serie": "tk",
+    "set": "tk-bw-e"
+  },
+  "bw trainer kit zoroark": {
+    "serie": "tk",
+    "set": "tk-bw-z"
+  },
+  "noble victories": {
+    "serie": "bw",
+    "set": "bw3"
+  },
+  "next destinies": {
+    "serie": "bw",
+    "set": "bw4"
+  },
+  "dark explorers": {
+    "serie": "bw",
+    "set": "bw5"
+  },
+  "mcdonalds collection 2012": {
+    "serie": "sv",
+    "set": "2012bw"
+  },
+  "dragons exalted": {
+    "serie": "bw",
+    "set": "bw6"
+  },
+  "dragon vault": {
+    "serie": "dv",
+    "set": "dv1"
+  },
+  "boundaries crossed": {
+    "serie": "bw",
+    "set": "bw7"
+  },
+  "plasma storm": {
+    "serie": "bw",
+    "set": "bw8"
+  },
+  "plasma freeze": {
+    "serie": "bw",
+    "set": "bw9"
+  },
+  "plasma blast": {
+    "serie": "bw",
+    "set": "bw10"
+  },
+  "xy black star promos": {
+    "serie": "xyp",
+    "set": "xyp"
+  },
+  "radiant collection": {
+    "serie": "rc",
+    "set": "rc"
+  },
+  "legendary treasures": {
+    "serie": "bw",
+    "set": "bw11"
+  },
+  "kalos starter set": {
+    "serie": "xy",
+    "set": "xy0"
+  },
+  "xy": {
+    "serie": "xy",
+    "set": "xy1"
+  },
+  "yellow a alternate": {
+    "serie": "xya",
+    "set": "xya"
+  },
+  "xy trainer kit noivern": {
+    "serie": "tk",
+    "set": "tk-xy-n"
+  },
+  "xy trainer kit sylveon": {
+    "serie": "tk",
+    "set": "tk-xy-sy"
+  },
+  "flashfire": {
+    "serie": "xy",
+    "set": "xy2"
+  },
+  "mcdonalds collection 2014": {
+    "serie": "sv",
+    "set": "2014xy"
+  },
+  "furious fists": {
+    "serie": "xy",
+    "set": "xy3"
+  },
+  "xy trainer kit bisharp": {
+    "serie": "tk",
+    "set": "tk-xy-b"
+  },
+  "xy trainer kit wigglytuff": {
+    "serie": "tk",
+    "set": "tk-xy-w"
+  },
+  "phantom forces": {
+    "serie": "xy",
+    "set": "xy4"
+  },
+  "primal clash": {
+    "serie": "xy",
+    "set": "xy5"
+  },
+  "double crisis": {
+    "serie": "dc",
+    "set": "dc1"
+  },
+  "xy trainer kit latios": {
+    "serie": "tk",
+    "set": "tk-xy-latio"
+  },
+  "xy trainer kit latias": {
+    "serie": "tk",
+    "set": "tk-xy-latia"
+  },
+  "roaring skies": {
+    "serie": "xy",
+    "set": "xy6"
+  },
+  "ancient origins": {
+    "serie": "xy",
+    "set": "xy7"
+  },
+  "breakthrough": {
+    "serie": "xy",
+    "set": "xy8"
+  },
+  "mcdonalds collection 2015": {
+    "serie": "sv",
+    "set": "2015xy"
+  },
+  "breakpoint": {
+    "serie": "xy",
+    "set": "xy9"
+  },
+  "generations": {
+    "serie": "g",
+    "set": "g1"
+  },
+  "xy trainer kit pikachu libre": {
+    "serie": "tk",
+    "set": "tk-xy-p"
+  },
+  "xy trainer kit suicune": {
+    "serie": "tk",
+    "set": "tk-xy-su"
+  },
+  "fates collide": {
+    "serie": "xy",
+    "set": "xy10"
+  },
+  "steam siege": {
+    "serie": "xy",
+    "set": "xy11"
+  },
+  "mcdonalds collection 2016": {
+    "serie": "sv",
+    "set": "2016xy"
+  },
+  "evolutions": {
+    "serie": "xy",
+    "set": "xy12"
+  },
+  "sun  moon": {
+    "serie": "sm",
+    "set": "sm1"
+  },
+  "sm black star promos": {
+    "serie": "smp",
+    "set": "smp"
+  },
+  "sm trainer kit alolan raichu": {
+    "serie": "tk",
+    "set": "tk-sm-r"
+  },
+  "sm trainer kit lycanroc": {
+    "serie": "tk",
+    "set": "tk-sm-l"
+  },
+  "guardians rising": {
+    "serie": "sm",
+    "set": "sm2"
+  },
+  "mcdonalds collection 2017": {
+    "serie": "sv",
+    "set": "2017sm"
+  },
+  "burning shadows": {
+    "serie": "sm",
+    "set": "sm3"
+  },
+  "shining legends": {
+    "serie": "sm",
+    "set": "sm3.5"
+  },
+  "crimson invasion": {
+    "serie": "sm",
+    "set": "sm4"
+  },
+  "ultra prism": {
+    "serie": "sm",
+    "set": "sm5"
+  },
+  "forbidden light": {
+    "serie": "sm",
+    "set": "sm6"
+  },
+  "celestial storm": {
+    "serie": "sm",
+    "set": "sm7"
+  },
+  "dragon majesty": {
+    "serie": "sm",
+    "set": "sm7.5"
+  },
+  "mcdonalds collection 2018": {
+    "serie": "sv",
+    "set": "2018sm"
+  },
+  "lost thunder": {
+    "serie": "sm",
+    "set": "sm8"
+  },
+  "team up": {
+    "serie": "sm",
+    "set": "sm9"
+  },
+  "detective pikachu": {
+    "serie": "det",
+    "set": "det1"
+  },
+  "unbroken bonds": {
+    "serie": "sm",
+    "set": "sm10"
+  },
+  "unified minds": {
+    "serie": "sm",
+    "set": "sm11"
+  },
+  "hidden fates shiny vault": {
+    "serie": "sma",
+    "set": "sma"
+  },
+  "hidden fates": {
+    "serie": "sm",
+    "set": "sm115"
+  },
+  "mcdonalds collection 2019": {
+    "serie": "sv",
+    "set": "2019sm"
+  },
+  "cosmic eclipse": {
+    "serie": "sm",
+    "set": "sm12"
+  },
+  "swsh black star promos": {
+    "serie": "swshp",
+    "set": "swshp"
+  },
+  "sword  shield": {
+    "serie": "swsh",
+    "set": "swsh1"
+  },
+  "rebel clash": {
+    "serie": "swsh",
+    "set": "swsh2"
+  },
+  "darkness ablaze": {
+    "serie": "swsh",
+    "set": "swsh3"
+  },
+  "pokemon futsal 2020": {
+    "serie": "fut",
+    "set": "fut2020"
+  },
+  "champions path": {
+    "serie": "swsh",
+    "set": "swsh3.5"
+  },
+  "vivid voltage": {
+    "serie": "swsh",
+    "set": "swsh4"
+  },
+  "mcdonalds collection 2021": {
+    "serie": "sv",
+    "set": "2021swsh"
+  },
+  "shining fates": {
+    "serie": "swsh",
+    "set": "swsh4.5"
+  },
+  "shining fates shiny vault": {
+    "serie": "swsh",
+    "set": "swsh4.5sv"
+  },
+  "battle styles": {
+    "serie": "swsh",
+    "set": "swsh5"
+  },
+  "chilling reign": {
+    "serie": "swsh",
+    "set": "swsh6"
+  },
+  "evolving skies": {
+    "serie": "swsh",
+    "set": "swsh7"
+  },
+  "celebrations classic collection": {
+    "serie": "cel",
+    "set": "cel25cc"
+  },
+  "celebrations": {
+    "serie": "cel",
+    "set": "cel25"
+  },
+  "fusion strike": {
+    "serie": "swsh",
+    "set": "swsh8"
+  },
+  "brilliant stars trainer gallery": {
+    "serie": "swsh",
+    "set": "swsh9tg"
+  },
+  "brilliant stars": {
+    "serie": "swsh",
+    "set": "swsh9"
+  },
+  "astral radiance": {
+    "serie": "swsh",
+    "set": "swsh10"
+  },
+  "astral radiance trainer gallery": {
+    "serie": "swsh",
+    "set": "swsh10tg"
+  },
+  "pokemon go": {
+    "serie": "swsh",
+    "set": "swsh10.5"
+  },
+  "mcdonalds collection 2022": {
+    "serie": "sv",
+    "set": "2022swsh"
+  },
+  "lost origin": {
+    "serie": "swsh",
+    "set": "swsh11"
+  },
+  "lost origin trainer gallery": {
+    "serie": "swsh",
+    "set": "swsh11tg"
+  },
+  "silver tempest": {
+    "serie": "swsh",
+    "set": "swsh12"
+  },
+  "silver tempest trainer gallery": {
+    "serie": "swsh",
+    "set": "swsh12tg"
+  },
+  "crown zenith": {
+    "serie": "swsh",
+    "set": "swsh12.5"
+  },
+  "crown zenith galarian gallery": {
+    "serie": "swsh",
+    "set": "swsh12.5gg"
+  },
+  "scarlet  violet": {
+    "serie": "sv",
+    "set": "sv01"
+  },
+  "scarlet  violet energy": {
+    "serie": "sve",
+    "set": "sve"
+  },
+  "svp black star promos": {
+    "serie": "svp",
+    "set": "svp"
+  },
+  "paldea evolved": {
+    "serie": "sv",
+    "set": "sv02"
+  },
+  "mcdonalds collection 2023": {
+    "serie": "sv",
+    "set": "2023sv"
+  },
+  "obsidian flames": {
+    "serie": "sv",
+    "set": "sv03"
+  },
+  "151": {
+    "serie": "sv",
+    "set": "sv03.5",
+    "lang": "pt"
+  },
+  "my first battle": {
+    "serie": "mfb",
+    "set": "mfb"
+  },
+  "paradox rift": {
+    "serie": "sv",
+    "set": "sv04"
+  },
+  "paldean fates": {
+    "serie": "sv",
+    "set": "sv04.5"
+  },
+  "temporal forces": {
+    "serie": "sv",
+    "set": "sv05"
+  },
+  "twilight masquerade": {
+    "serie": "sv",
+    "set": "sv06"
+  },
+  "shrouded fable": {
+    "serie": "sv",
+    "set": "sv06.5"
+  },
+  "stellar crown": {
+    "serie": "sv",
+    "set": "sv07"
+  },
+  "promosa": {
+    "serie": "sv",
+    "set": "P-A"
+  },
+  "genetic apex": {
+    "serie": "sv",
+    "set": "A1"
+  },
+  "surging sparks": {
+    "serie": "sv",
+    "set": "sv08"
+  },
+  "mcdonalds collection 2024": {
+    "serie": "sv",
+    "set": "2024sv"
+  },
+  "mythical island": {
+    "serie": "sv",
+    "set": "A1a"
+  },
+  "prismatic evolutions": {
+    "serie": "sv",
+    "set": "sv08.5"
+  },
+  "spacetime smackdown": {
+    "serie": "sv",
+    "set": "A2"
+  },
+  "triumphant light": {
+    "serie": "sv",
+    "set": "A2a"
+  },
+  "shining revelry": {
+    "serie": "sv",
+    "set": "A2b"
+  },
+  "journey together": {
+    "serie": "sv",
+    "set": "sv09"
+  },
+  "celestial guardians": {
+    "serie": "sv",
+    "set": "A3"
+  },
+  "extradimensional crisis": {
+    "serie": "sv",
+    "set": "A3a"
+  },
+  "destined rivals": {
+    "serie": "sv",
+    "set": "sv10"
+  },
+  "eevee grove": {
+    "serie": "sv",
+    "set": "A3b"
+  },
+  "black bolt": {
+    "serie": "sv",
+    "set": "sv10.5b"
+  },
+  "white flare": {
+    "serie": "sv",
+    "set": "sv10.5w"
+  },
+  "wisdom of sea and sky": {
+    "serie": "sv",
+    "set": "A4"
+  },
+  "secluded springs": {
+    "serie": "sv",
+    "set": "A4a"
+  },
+  "mega evolution energy": {
+    "serie": "mee",
+    "set": "mee"
+  },
+  "mega evolution": {
+    "serie": "me",
+    "set": "me01"
+  },
+  "mep black star promos": {
+    "serie": "mep",
+    "set": "mep"
+  },
+  "mega rising": {
+    "serie": "sv",
+    "set": "B1"
+  },
+  "phantasmal flames": {
+    "serie": "me",
+    "set": "me02"
+  },
+  "crimson blaze": {
+    "serie": "sv",
+    "set": "B1a"
+  },
+  "fantastical parade": {
+    "serie": "sv",
+    "set": "B2"
+  },
+  "ascended heroes": {
+    "serie": "me",
+    "set": "me02.5"
+  },
+  "paldean wonders": {
+    "serie": "sv",
+    "set": "B2a"
+  },
+  "perfect order": {
+    "serie": "me",
+    "set": "me03"
+  },
+  "chaos rising": {
+    "serie": "me",
+    "set": "me04"
+  },
+  "pitch black": {
+    "serie": "me",
+    "set": "me05"
+  },
+  "30th celebration": {
+    "serie": "sv",
+    "set": "30th"
+  },
+  "30th classic collection": {
+    "serie": "sv",
+    "set": "30th-c"
+  },
+  "colecao basica": {
+    "serie": "base",
+    "set": "base1"
+  },
+  "selva": {
+    "serie": "base",
+    "set": "base2"
+  },
+  "ex rubi e safira": {
+    "serie": "ex",
+    "set": "ex1"
+  },
+  "ex o retorno da equipe rocket": {
+    "serie": "ex",
+    "set": "ex7"
+  },
+  "ex deoxys": {
+    "serie": "ex",
+    "set": "ex8"
+  },
+  "ex esmeralda": {
+    "serie": "ex",
+    "set": "ex9"
+  },
+  "ex forcas ocultas": {
+    "serie": "ex",
+    "set": "ex10"
+  },
+  "diamante  perola": {
+    "serie": "dp",
+    "set": "dp1"
+  },
+  "tesouros misteriosos": {
+    "serie": "dp",
+    "set": "dp2"
+  },
+  "maravilhas secretas": {
+    "serie": "dp",
+    "set": "dp3"
+  },
+  "revelado": {
+    "serie": "hgss",
+    "set": "hgss2"
+  },
+  "destemido": {
+    "serie": "hgss",
+    "set": "hgss3"
+  },
+  "triunfante": {
+    "serie": "hgss",
+    "set": "hgss4"
+  },
+  "chamado das lendas": {
+    "serie": "col",
+    "set": "col1"
+  },
+  "poderes emergentes": {
+    "serie": "bw",
+    "set": "bw2"
+  },
+  "vitorias nobres": {
+    "serie": "bw",
+    "set": "bw3"
+  },
+  "proximos destinos": {
+    "serie": "bw",
+    "set": "bw4"
+  },
+  "exploradores da escuridao": {
+    "serie": "bw",
+    "set": "bw5"
+  },
+  "dragoes enaltecidos": {
+    "serie": "bw",
+    "set": "bw6"
+  },
+  "cofre do dragao": {
+    "serie": "dv",
+    "set": "dv1"
+  },
+  "fronteiras cruzadas": {
+    "serie": "bw",
+    "set": "bw7"
+  },
+  "tempestade de plasma": {
+    "serie": "bw",
+    "set": "bw8"
+  },
+  "congelamento de plasma": {
+    "serie": "bw",
+    "set": "bw9"
+  },
+  "explosao de plasma": {
+    "serie": "bw",
+    "set": "bw10"
+  },
+  "tesouros lendarios": {
+    "serie": "bw",
+    "set": "bw11"
+  },
+  "conjunto para iniciantes kalos": {
+    "serie": "xy",
+    "set": "xy0"
+  },
+  "flash de fogo": {
+    "serie": "xy",
+    "set": "xy2"
+  },
+  "punhos furiosos": {
+    "serie": "xy",
+    "set": "xy3"
+  },
+  "forca fantasma": {
+    "serie": "xy",
+    "set": "xy4"
+  },
+  "conflito primitivo": {
+    "serie": "xy",
+    "set": "xy5"
+  },
+  "crise dupla": {
+    "serie": "xy",
+    "set": "dcr"
+  },
+  "ceus estrondosos": {
+    "serie": "xy",
+    "set": "xy6"
+  },
+  "origens ancestrais": {
+    "serie": "xy",
+    "set": "xy7"
+  },
+  "turbo revolucao": {
+    "serie": "xy",
+    "set": "xy8"
+  },
+  "turbo colisao": {
+    "serie": "xy",
+    "set": "xy9"
+  },
+  "geracoes": {
+    "serie": "xy",
+    "set": "g1"
+  },
+  "fusao de destinos": {
+    "serie": "xy",
+    "set": "xy10"
+  },
+  "cerco de vapor": {
+    "serie": "xy",
+    "set": "xy11"
+  },
+  "evolucoes": {
+    "serie": "xy",
+    "set": "xy12"
+  },
+  "sol e lua": {
+    "serie": "sm",
+    "set": "sm1"
+  },
+  "sol e lua promos": {
+    "serie": "smp",
+    "set": "smp"
+  },
+  "guardioes ascendentes": {
+    "serie": "sm",
+    "set": "sm2"
+  },
+  "sombras ardentes": {
+    "serie": "sm",
+    "set": "sm3"
+  },
+  "lendas luminescentes": {
+    "serie": "sm",
+    "set": "sm3.5"
+  },
+  "invasao carmim": {
+    "serie": "sm",
+    "set": "sm4"
+  },
+  "ultra prisma": {
+    "serie": "sm",
+    "set": "sm5"
+  },
+  "luz proibida": {
+    "serie": "sm",
+    "set": "sm6"
+  },
+  "tempestade celestial": {
+    "serie": "sm",
+    "set": "sm7"
+  },
+  "dragoes soberanos": {
+    "serie": "sm",
+    "set": "sm7.5"
+  },
+  "trovoes perdidos": {
+    "serie": "sm",
+    "set": "sm8"
+  },
+  "uniao de aliados": {
+    "serie": "sm",
+    "set": "sm9"
+  },
+  "detetive pikachu": {
+    "serie": "det",
+    "set": "det1"
+  },
+  "elos inquebraveis": {
+    "serie": "sm",
+    "set": "sm10"
+  },
+  "sintonia mental": {
+    "serie": "sm",
+    "set": "sm11"
+  },
+  "destinos ocultos cofre brilhante": {
+    "serie": "sma",
+    "set": "sma"
+  },
+  "destinos ocultos": {
+    "serie": "sm",
+    "set": "sm115"
+  },
+  "eclipse cosmico": {
+    "serie": "sm",
+    "set": "sm12"
+  },
+  "eses promos": {
+    "serie": "swshp",
+    "set": "swshp"
+  },
+  "espada e escudo": {
+    "serie": "swsh",
+    "set": "swsh1"
+  },
+  "rixa rebelde": {
+    "serie": "swsh",
+    "set": "swsh2"
+  },
+  "escuridao incandescente": {
+    "serie": "swsh",
+    "set": "swsh3"
+  },
+  "caminho do campeao": {
+    "serie": "swsh",
+    "set": "swsh3.5"
+  },
+  "voltagem vivida": {
+    "serie": "swsh",
+    "set": "swsh4"
+  },
+  "destinos brilhantes": {
+    "serie": "swsh",
+    "set": "swsh4.5"
+  },
+  "destinos brilhantes cofre brilhante": {
+    "serie": "swsh",
+    "set": "swsh4.5sv"
+  },
+  "estilos de batalha": {
+    "serie": "swsh",
+    "set": "swsh5"
+  },
+  "reinado arrepiante": {
+    "serie": "swsh",
+    "set": "swsh6"
+  },
+  "ceus em evolucao": {
+    "serie": "swsh",
+    "set": "swsh7"
+  },
+  "celebracoes colecao classica": {
+    "serie": "cel",
+    "set": "cel25cc"
+  },
+  "celebracoes": {
+    "serie": "swsh",
+    "set": "cel25"
+  },
+  "golpe fusao": {
+    "serie": "swsh",
+    "set": "swsh8"
+  },
+  "astros cintilantes galeria de treinador": {
+    "serie": "swsh",
+    "set": "swsh9tg"
+  },
+  "astros cintilantes": {
+    "serie": "swsh",
+    "set": "swsh9"
+  },
+  "estrelas radiantes": {
+    "serie": "swsh",
+    "set": "swsh10"
+  },
+  "estrelas radiantes galeria de treinador": {
+    "serie": "swsh",
+    "set": "swsh10tg"
+  },
+  "origem perdida": {
+    "serie": "swsh",
+    "set": "swsh11"
+  },
+  "origem perdida galeria de treinador": {
+    "serie": "swsh",
+    "set": "swsh11tg"
+  },
+  "tempestade prateada": {
+    "serie": "swsh",
+    "set": "swsh12"
+  },
+  "tempestade prateada galeria de treinador": {
+    "serie": "swsh",
+    "set": "swsh12tg"
+  },
+  "realeza absoluta": {
+    "serie": "swsh",
+    "set": "swsh12.5"
+  },
+  "realeza absoluta galeria de galar": {
+    "serie": "swsh",
+    "set": "swsh12.5gg"
+  },
+  "escarlate e violeta": {
+    "serie": "sv",
+    "set": "sv01"
+  },
+  "escarlate e violeta energia": {
+    "serie": "sve",
+    "set": "sve"
+  },
+  "evolucoes em paldea": {
+    "serie": "sv",
+    "set": "sv02"
+  },
+  "obsidiana em chamas": {
+    "serie": "sv",
+    "set": "sv03"
+  },
+  "fenda paradoxal": {
+    "serie": "sv",
+    "set": "sv04"
+  },
+  "destinos de paldea": {
+    "serie": "sv",
+    "set": "sv04.5"
+  },
+  "forcas temporais": {
+    "serie": "sv",
+    "set": "sv05"
+  },
+  "mascaras do crepusculo": {
+    "serie": "sv",
+    "set": "sv06"
+  },
+  "fabulas nebulosas": {
+    "serie": "sv",
+    "set": "sv06.5"
+  },
+  "coroa estelar": {
+    "serie": "sv",
+    "set": "sv07"
+  },
+  "promoa": {
+    "serie": "sv",
+    "set": "P-A"
+  },
+  "dominacao genetica": {
+    "serie": "sv",
+    "set": "A1"
+  },
+  "fagulhas impetuosas": {
+    "serie": "sv",
+    "set": "sv08"
+  },
+  "ilha mitica": {
+    "serie": "sv",
+    "set": "A1a"
+  },
+  "evolucoes prismaticas": {
+    "serie": "sv",
+    "set": "sv08.5"
+  },
+  "embate do tempo e espaco": {
+    "serie": "sv",
+    "set": "A2"
+  },
+  "luz triunfante": {
+    "serie": "sv",
+    "set": "A2a"
+  },
+  "festival brilhante": {
+    "serie": "sv",
+    "set": "A2b"
+  },
+  "amigos de jornada": {
+    "serie": "sv",
+    "set": "sv09",
+    "lang": "pt"
+  },
+  "guardioes celestiais": {
+    "serie": "sv",
+    "set": "A3"
+  },
+  "rivais predestinados": {
+    "serie": "sv",
+    "set": "sv10"
+  },
+  "raio preto": {
+    "serie": "sv",
+    "set": "sv10.5b",
+    "lang": "pt"
+  },
+  "fogo branco": {
+    "serie": "sv",
+    "set": "sv10.5w",
+    "lang": "pt"
+  },
+  "nascentes reclusas": {
+    "serie": "sv",
+    "set": "A4a"
+  },
+  "megaevolucao energia": {
+    "serie": "mee",
+    "set": "mee"
+  },
+  "megaevolucao": {
+    "serie": "me",
+    "set": "mep",
+    "lang": "en"
+  },
+  "fogo fantasmagorico": {
+    "serie": "me",
+    "set": "me02",
+    "lang": "pt"
+  },
+  "chama carmesim": {
+    "serie": "sv",
+    "set": "B1a"
+  },
+  "desfile onirico": {
+    "serie": "sv",
+    "set": "B2"
+  },
+  "herois excelsos": {
+    "serie": "me",
+    "set": "me02.5"
+  },
+  "equilibrio perfeito": {
+    "serie": "me",
+    "set": "me03",
+    "lang": "pt"
+  },
+  "caos ascendente": {
+    "serie": "me",
+    "set": "me04",
+    "lang": "pt"
+  },
+  "escuridao absoluta": {
+    "serie": "me",
+    "set": "me05"
+  },
+  "celebracao de 30 anos": {
+    "serie": "me",
+    "set": "30th",
+    "lang": "en"
+  },
+  "colecao classica de 30 anos": {
+    "serie": "sv",
+    "set": "30th-c"
+  },
+  "collection 151": {
+    "serie": "sv",
+    "set": "sv03.5",
+    "lang": "pt"
+  },
+  "escarlate e violeta promos": {
+    "serie": "sv",
+    "set": "svp"
+  },
+  "espada e escudo promos": {
+    "serie": "swsh",
+    "set": "swshp"
+  },
+  "promos mega evolucao": {
+    "serie": "me",
+    "set": "mep",
+    "lang": "en"
+  },
+  "mega evolution promos": {
+    "serie": "me",
+    "set": "mep",
+    "lang": "en"
+  },
+  "ultraprisma": {
+    "serie": "sm",
+    "set": "sm5"
+  },
+  "black white": {
+    "serie": "bw",
+    "set": "bw1"
+  },
+  "diamante perola": {
+    "serie": "dp",
+    "set": "dp1"
+  },
+  "rubi safira": {
+    "serie": "ex",
+    "set": "ex1"
+  },
+  "rubi & safira": {
+    "serie": "ex",
+    "set": "ex1"
+  },
+  "eevee heroes": {
+    "serie": "swsh",
+    "set": "s6a",
+    "lang": "ja"
+  },
+  "fusion arts": {
+    "serie": "swsh",
+    "set": "s8"
+  },
+  "vstar universe": {
+    "serie": "swsh",
+    "set": "s12a"
+  },
+  "shiny treasure ex": {
+    "serie": "sv",
+    "set": "sv4a"
+  },
+  "violet ex": {
+    "serie": "sv",
+    "set": "sv1v"
+  },
+  "scarlet ex": {
+    "serie": "sv",
+    "set": "sv1s"
+  },
+  "clay burst": {
+    "serie": "sv",
+    "set": "sv2D"
+  },
+  "triplet beat": {
+    "serie": "sv",
+    "set": "sv1a"
+  },
+  "raging surf": {
+    "serie": "sv",
+    "set": "sv3a"
+  },
+  "ancient roar": {
+    "serie": "sv",
+    "set": "sv4k"
+  },
+  "wild force": {
+    "serie": "SV",
+    "set": "SV5K",
+    "lang": "ja"
+  },
+  "crimson haze": {
+    "serie": "sv",
+    "set": "sv5a"
+  },
+  "stellar miracle": {
+    "serie": "sv",
+    "set": "sv7"
+  },
+  "terastal fest ex": {
+    "serie": "sv",
+    "set": "sv8a"
+  },
+  "battle region": {
+    "serie": "swsh",
+    "set": "s9a"
+  },
+  "dark phantasma": {
+    "serie": "swsh",
+    "set": "s10a"
+  },
+  "lost abyss": {
+    "serie": "swsh",
+    "set": "s11"
+  },
+  "incandescent arcana": {
+    "serie": "swsh",
+    "set": "s11a"
+  },
+  "paradigm trigger": {
+    "serie": "swsh",
+    "set": "s12"
+  },
+  "vmax climax": {
+    "serie": "swsh",
+    "set": "s8b"
+  },
+  "celebracao de 30 anos cartas classicas": {
+    "serie": "me",
+    "set": "30th-c",
+    "lang": "en"
+  },
+  "30 anos": {
+    "serie": "me",
+    "set": "30th",
+    "lang": "en"
+  },
+  "abyss eye": {
+    "serie": "SV",
+    "set": "SV9a",
+    "lang": "ja"
+  },
+  "alter genesis": {
+    "serie": "sm",
+    "set": "sm12",
+    "lang": "ja"
+  },
+  "dark crystal blaze": {
+    "serie": "SV",
+    "set": "SV3",
+    "lang": "ja"
+  },
+  "ruler of the black flame": {
+    "serie": "SV",
+    "set": "SV3",
+    "lang": "ja"
+  },
+  "pokemon card 151": {
+    "serie": "sv",
+    "set": "sv03.5",
+    "lang": "pt"
+  }
+}

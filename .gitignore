@@ -1,0 +1,27 @@
+# Browser user data & profiles
+user_data/
+chrome_data/
+
+# Python cache & build
+__pycache__/
+*.pyc
+
+# Firebase cache
+.firebase/
+
+# Session & Sensitive Data
+data/session_cookies.json
+
+# Logs & temp
+*.log
+tmp/
+temp/
+
+# Node modules & build artifacts
+node_modules/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local

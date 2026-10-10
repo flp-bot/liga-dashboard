@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Digit Resolver</title>
+<style>
+body { background: #0f172a; color: #fff; font-family: sans-serif; padding: 20px; }
+.grid { display: flex; flex-wrap: wrap; gap: 16px; }
+.card { background: #1e293b; border: 1px solid #334155; padding: 12px; border-radius: 8px; text-align: center; }
+.card img { background: #fff; padding: 4px; border-radius: 4px; image-rendering: pixelated; width: 32px; height: 44px; }
+input { width: 40px; text-align: center; font-size: 18px; font-weight: bold; margin-top: 8px; }
+</style>
+</head>
+<body>
+<h2>Mapeador de Dígitos CSS Sprite</h2>
+<div class="grid">
+
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAH0lEQVR4nOzJIQEAAADCMAT9K58EeASzM6DC6n77FwAAAP//NprodAAAAAZJREFUAwDNiQNCb14OxQAAAABJRU5ErkJggg=="></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-536px -44px</div>
+        <input type="text" maxlength="1" data-pos="-536px -44px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAH0lEQVR4nOzJIQEAAADCMAT9K58EeASzM6DC6n77FwAAAP//NprodAAAAAZJREFUAwDNiQNCb14OxQAAAABJRU5ErkJggg=="></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-360px -23px</div>
+        <input type="text" maxlength="1" data-pos="-360px -23px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAH0lEQVR4nOzJIQEAAADCMAT9K58EeASzM6DC6n77FwAAAP//NprodAAAAAZJREFUAwDNiQNCb14OxQAAAABJRU5ErkJggg=="></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-256px -44px</div>
+        <input type="text" maxlength="1" data-pos="-256px -44px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAH0lEQVR4nOzJIQEAAADCMAT9K58EeASzM6DC6n77FwAAAP//NprodAAAAAZJREFUAwDNiQNCb14OxQAAAABJRU5ErkJggg=="></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-552px -2px</div>
+        <input type="text" maxlength="1" data-pos="-552px -2px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAhElEQVR4nLRRyw0AERAl0YMCFKAHXShAASrhrgD1KEABqrBPZmNXwtE7TOZ9jBGi984OEOyMi561dko5Z2o49oTRWiMJvZSS+nEuxogKieLIfTOn6pxDTSkt95FRa4WhlCIqtgYAOnbx3pdSQgha6zkGyvCMMSB/A7n3DYiwFZTjF/7hAQAA//8jd187AAAABklEQVQDAMGGRFKMWz/mAAAAAElFTkSuQmCC"></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-456px -23px</div>
+        <input type="text" maxlength="1" data-pos="-456px -23px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAeklEQVR4nLSQUQ3AIAwFYZkTBKABGQhAAEoQgADsgAAEoIK9pQkh3bq/XUJLuFJIzzmnEjiVzO/Oe49YSuEOYozxcu8pwIEVQoDIOfP3IHrvEMYY5rRzDokEimhPPXStdRXGGBFTStbauyelnXWi91m31kTH/6lkvtwFAAD///eF4KMAAAAGSURBVAMAN6IviYcaIZEAAAAASUVORK5CYII="></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-368px -23px</div>
+        <input type="text" maxlength="1" data-pos="-368px -23px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAjUlEQVR4nLSRQQ3AIBRDR4IHBCAAPQhAAEdUIAABCEEBAhCAClbShR0WttP+gbR9ZRkgxxjHZuSxnx+ZtXZFOWcKgf8E6L0zglZKUc99AFgRsU577WutOee01vDQKSXqyQAYwbNELdnFyu6yH2eY36y1eu+NMfDQMUZqwbtGtOoEN3tOCGHLSini5f1OAAAA//+PdDQUAAAABklEQVQDANKBVBgXc2vNAAAAAElFTkSuQmCC"></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-320px -23px</div>
+        <input type="text" maxlength="1" data-pos="-320px -23px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAfElEQVR4nLSQ0Q0AERBESfSgAAWoRwEKUIkCFKAeBShAFW5kL07E/lxiP2R23xixqvcumFKCr1vMObdNc84va63N/pyptWaZ955ESomExN9rravDGEN43EOzRk3rYCEEnDHG7b2RWUoBttaih4aJtKRdYzTtBD52rL/7fAAAAP//iM39aQAAAAZJREFUAwAOtzIf9tStTAAAAABJRU5ErkJggg=="></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-568px -44px</div>
+        <input type="text" maxlength="1" data-pos="-568px -44px" placeholder="?">
+    </div>
+    
+    <div class="card">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAIAAACAdhGxAAAAfklEQVR4nLSRQQ3AIAxFYcEDAhCAB1wgAAHc5gIBCEAPAhBQFV2zLs1Ywm700Pz8x08pGERUizJqXdtZjJFFa21iBACA3SknwForTPN+IQTqzjl2a63Uj/e8864xRkrpexfJEVb/Ozzzeu85Z+8961IKaS1vTZYk+JDe8A8XAAAA//9/c+f6AAAABklEQVQDALK4NnlqkRo6AAAAAElFTkSuQmCC"></div>
+        <div style="font-size:11px; margin-top:4px; color:#94a3b8">-232px -23px</div>
+        <input type="text" maxlength="1" data-pos="-232px -23px" placeholder="?">
+    </div>
+    
+</div>
+</body>
+</html>

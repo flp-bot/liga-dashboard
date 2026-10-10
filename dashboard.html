@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LigaPokemon - Dashboard da Coleção</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Common Utilities & SmartFetch Router -->
+    <script src="common.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="auth.css">
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --card-bg: rgba(26, 34, 52, 0.75);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --primary: #8b5cf6;
+            --primary-glow: rgba(139, 92, 246, 0.35);
+            --accent-pink: #ec4899;
+            --accent-blue: #3b82f6;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.12) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand-title {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px var(--primary-glow);
+        }
+
+        .brand-title h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-title p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .last-update-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--card-border);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--primary), var(--accent-pink));
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px var(--primary-glow);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(236, 72, 153, 0.4);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Metrics Cards */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+
+        .metric-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+        }
+
+        .metric-card.pink::before { background: linear-gradient(90deg, var(--accent-pink), #f43f5e); }
+        .metric-card.purple::before { background: linear-gradient(90deg, var(--primary), #a855f7); }
+        .metric-card.blue::before { background: linear-gradient(90deg, var(--accent-blue), #06b6d4); }
+        .metric-card.emerald::before { background: linear-gradient(90deg, var(--accent-emerald), #14b8a6); }
+
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .metric-icon-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .metric-card.pink .metric-icon-box { background: rgba(236, 72, 153, 0.15); color: var(--accent-pink); }
+        .metric-card.purple .metric-icon-box { background: rgba(139, 92, 246, 0.15); color: var(--primary); }
+        .metric-card.blue .metric-icon-box { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+        .metric-card.emerald .metric-icon-box { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+
+        .metric-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .metric-sub {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        /* Dashboard Charts Section */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .chart-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-card.full-width { grid-column: span 12; }
+        .chart-card.two-thirds { grid-column: span 8; }
+        .chart-card.one-third { grid-column: span 4; }
+        .chart-card.half { grid-column: span 6; }
+
+        @media (max-width: 1024px) {
+            .chart-card.two-thirds, .chart-card.one-third, .chart-card.half { grid-column: span 12; }
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chart-container {
+            position: relative;
+            flex-grow: 1;
+            min-height: 280px;
+            width: 100%;
+        }
+
+        /* Tables & Lists */
+        .data-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 14px 16px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            font-size: 0.9rem;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge-pill {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .badge-purple { background: rgba(139, 92, 246, 0.2); color: #c4b5fd; }
+        .badge-emerald { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
+
+        /* Spinner Animation */
+        .spinning {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="brand-title">
+                <div class="brand-icon">
+                    <i data-lucide="layers" style="color: white; width: 26px; height: 26px;"></i>
+                </div>
+                <div>
+                    <h1>LigaPokemon Collection Dashboard</h1>
+                    <p>Acompanhamento diário da valorização da sua coleção</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 8px; background: rgba(255, 255, 255, 0.05); padding: 6px; border-radius: 16px; border: 1px solid var(--card-border);">
+                <a href="dashboard.html" style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, var(--primary), var(--accent-pink)); color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="layout-dashboard" style="width: 18px; height: 18px;"></i>
+                    Visão Geral (Dashboard)
+                </a>
+                <a href="collections.html" style="padding: 10px 20px; border-radius: 12px; color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="layers" style="width: 18px; height: 18px;"></i>
+                    Explorador de Cartas
+                </a>
+                <a href="sales.html" style="padding: 10px 20px; border-radius: 12px; color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="tag" style="width: 18px; height: 18px;"></i>
+                    Cards à Venda
+                </a>
+                <a href="stores.html" style="padding: 10px 20px; border-radius: 12px; color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+                    Lojas Virtuais
+                </a>
+            </div>
+
+            <div class="header-actions">
+                <div class="session-status-badge" id="session-badge" onclick="openAuthModal()" title="Clique para gerenciar autenticação da Liga">
+                    <span class="status-dot dot-amber" id="session-dot"></span>
+                    <span id="session-status-text">Liga: Verificando...</span>
+                </div>
+                <button class="btn-auth-trigger" onclick="openAuthModal()" title="Conectar ou Alterar Conta da Liga">
+                    <i data-lucide="key" style="width: 16px; height: 16px;"></i>
+                    <span>Conta Liga</span>
+                </button>
+                <div class="last-update-badge">
+                    <i data-lucide="clock" style="width: 16px; height: 16px;"></i>
+                    <span id="last-updated">Carregando...</span>
+                </div>
+                <button class="btn" id="btn-run-scraper" onclick="triggerScraper()">
+                    <i data-lucide="refresh-cw" id="scraper-icon" style="width: 18px; height: 18px;"></i>
+                    <span id="scraper-btn-text">Atualizar Agora</span>
+                </button>
+            </div>
+        </header>
+
+
+        <!-- Top Metrics Row -->
+        <div class="metrics-grid">
+            <div class="metric-card pink">
+                <div class="metric-header">
+                    <span class="metric-label">Valor Máximo</span>
+                    <div class="metric-icon-box"><i data-lucide="trending-up" style="width: 20px; height: 20px;"></i></div>
+                </div>
+                <div class="metric-value" id="val-max">R$ 0,00</div>
+                <div class="metric-sub">Soma do maior preço dos cards</div>
+            </div>
+
+            <div class="metric-card purple">
+                <div class="metric-header">
+                    <span class="metric-label">Valor Médio</span>
+                    <div class="metric-icon-box"><i data-lucide="dollar-sign" style="width: 20px; height: 20px;"></i></div>
+                </div>
+                <div class="metric-value" id="val-avg">R$ 0,00</div>
+                <div class="metric-sub">Soma do preço médio de mercado</div>
+            </div>
+
+            <div class="metric-card blue">
+                <div class="metric-header">
+                    <span class="metric-label">Valor Mínimo</span>
+                    <div class="metric-icon-box"><i data-lucide="shield" style="width: 20px; height: 20px;"></i></div>
+                </div>
+                <div class="metric-value" id="val-min">R$ 0,00</div>
+                <div class="metric-sub">Soma do menor preço de lista</div>
+            </div>
+
+            <div class="metric-card emerald">
+                <div class="metric-header">
+                    <span class="metric-label">Total de Cartas</span>
+                    <div class="metric-icon-box"><i data-lucide="box" style="width: 20px; height: 20px;"></i></div>
+                </div>
+                <div class="metric-value" id="val-total-cards">0</div>
+                <div class="metric-sub">Cards cadastrados na Liga</div>
+            </div>
+
+            <div class="metric-card amber" style="border-color: rgba(245, 158, 11, 0.3);">
+                <div class="metric-header">
+                    <span class="metric-label">Valor Pago Total</span>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <button id="btn-sync-card-costs" onclick="autoFillCardCostsTotal(true)" 
+                            style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); color: #f59e0b; border-radius: 6px; padding: 2px 8px; font-size: 0.72rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;" 
+                            title="Recalcular e puxar a soma dos preços de compra cadastrados nas cartas">
+                            <i data-lucide="refresh-cw" style="width: 12px; height: 12px;"></i> Puxar das cartas
+                        </button>
+                        <div class="metric-icon-box" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;"><i data-lucide="wallet" style="width: 20px; height: 20px;"></i></div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px;">
+                    <span style="font-size: 1.2rem; font-weight: 700; color: #f59e0b;">R$</span>
+                    <input type="number" id="input-dashboard-cost" step="0.01" min="0" placeholder="0,00" 
+                        style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); border-radius: 10px; padding: 6px 12px; color: #fff; font-family: 'Outfit', sans-serif; font-size: 1.4rem; font-weight: 700; outline: none;" 
+                        oninput="updateDashboardProfitComparison()" onchange="updateDashboardProfitComparison()">
+                </div>
+                <div class="metric-sub" id="sub-dashboard-cost-origin">Puxado das cartas cadastradas</div>
+            </div>
+
+            <div class="metric-card emerald" id="card-comparison" style="border-color: rgba(16, 185, 129, 0.3);">
+                <div class="metric-header">
+                    <span class="metric-label">Comparativo / Lucro</span>
+                    <div class="metric-icon-box" id="icon-box-comparison"><i data-lucide="pie-chart" style="width: 20px; height: 20px;"></i></div>
+                </div>
+                <div class="metric-value" id="val-comparison-profit" style="font-size: 1.5rem;">R$ 0,00</div>
+                <div class="metric-sub" id="sub-comparison">Comparado ao valor médio</div>
+            </div>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+            <!-- Full Width History Chart -->
+            <div class="chart-card full-width">
+                <div class="chart-title">
+                    <i data-lucide="activity" style="color: var(--primary);"></i>
+                    Histórico Diário da Valorização (R$)
+                </div>
+                <div class="chart-container">
+                    <canvas id="historyChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Half Width Breakdown: Coleções / Pastas -->
+            <div class="chart-card half">
+                <div class="chart-title">
+                    <i data-lucide="folder" style="color: var(--primary);"></i>
+                    Distribuição por Coleção / Pasta
+                </div>
+                <div class="chart-container">
+                    <canvas id="binderChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Half Width Breakdown: Raridades -->
+            <div class="chart-card half">
+                <div class="chart-title">
+                    <i data-lucide="sparkles" style="color: var(--accent-pink);"></i>
+                    Distribuição por Raridade
+                </div>
+                <div class="chart-container">
+                    <canvas id="rarityChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Half Width Breakdown: Idiomas -->
+            <div class="chart-card half">
+                <div class="chart-title">
+                    <i data-lucide="globe" style="color: var(--accent-blue);"></i>
+                    Distribuição por Idioma
+                </div>
+                <div class="chart-container">
+                    <canvas id="languageChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Half Width Breakdown: Qualidades -->
+            <div class="chart-card half">
+                <div class="chart-title">
+                    <i data-lucide="award" style="color: var(--accent-emerald);"></i>
+                    Estado de Conservação / Qualidade
+                </div>
+                <div class="chart-container">
+                    <canvas id="qualityChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Half Width Breakdown: Extras -->
+            <div class="chart-card half">
+                <div class="chart-title">
+                    <i data-lucide="zap" style="color: var(--accent-amber);"></i>
+                    Tratamentos Especiais / Extras
+                </div>
+                <div class="chart-container">
+                    <canvas id="extrasChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Log Table -->
+        <div class="data-card">
+            <div class="chart-title" style="margin-bottom: 20px;">
+                <i data-lucide="calendar" style="color: var(--primary);"></i>
+                Histórico Diário de Leitura
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data & Hora</th>
+                            <th>Total de Cartas</th>
+                            <th>Valor Mínimo (R$)</th>
+                            <th>Valor Médio (R$)</th>
+                            <th>Valor Máximo (R$)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                        <tr><td colspan="6" style="text-align: center; color: var(--text-muted);">Carregando dados...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        let historyChartInstance = null;
+        let binderChartInstance = null;
+        let rarityChartInstance = null;
+        let languageChartInstance = null;
+        let qualityChartInstance = null;
+        let extrasChartInstance = null;
+        let globalMinMarketPrice = 0;
+        let globalCalculatedCardCost = 0;
+        let globalHasCardsCost = false;
+
+        function getCardKey(card) {
+            return `${card.binder_id || ''}_${card.card_name_en || card.card_name_pt}_${card.card_number}_${card.set_pt}_${card.quality}_${card.language}`;
+        }
+
+        function autoFillCardCostsTotal(force = false) {
+            const inputEl = document.getElementById('input-dashboard-cost');
+            const originSubEl = document.getElementById('sub-dashboard-cost-origin');
+            if (!inputEl) return;
+            if (globalHasCardsCost) {
+                inputEl.value = globalCalculatedCardCost.toFixed(2);
+                if (originSubEl) {
+                    originSubEl.textContent = `Puxado do cadastro das cartas (${formatBRL(globalCalculatedCardCost)})`;
+                }
+                updateDashboardProfitComparison();
+            } else if (force) {
+                alert("Nenhum preço de compra cadastrado nas cartas da coleção ainda.");
+            }
+        }
+
+        function formatBRL(val) {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val || 0);
+        }
+
+        let dashboardCostSyncTimer = null;
+
+        function updateDashboardProfitComparison() {
+            const inputEl = document.getElementById('input-dashboard-cost');
+            if (!inputEl) return;
+            const valStr = inputEl.value.trim();
+            const paidVal = valStr === '' ? 0 : parseFloat(valStr);
+            const originSubEl = document.getElementById('sub-dashboard-cost-origin');
+
+            if (globalHasCardsCost && originSubEl) {
+                if (valStr !== '' && Math.abs(paidVal - globalCalculatedCardCost) < 0.01) {
+                    originSubEl.textContent = `Puxado do cadastro das cartas (${formatBRL(globalCalculatedCardCost)})`;
+                } else if (valStr !== '') {
+                    originSubEl.textContent = `Valor manual (Soma das cartas: ${formatBRL(globalCalculatedCardCost)})`;
+                } else {
+                    originSubEl.textContent = `Soma das cartas: ${formatBRL(globalCalculatedCardCost)}`;
+                }
+            }
+
+            if (valStr !== '') {
+                localStorage.setItem('total_collection_cost_paid', valStr);
+            }
+
+            // Sync with backend on disk
+            clearTimeout(dashboardCostSyncTimer);
+            dashboardCostSyncTimer = setTimeout(async () => {
+                try {
+                    await smartFetch('/api/costs', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ total_collection_cost: valStr === '' ? null : paidVal })
+                    });
+                } catch (e) {
+                    console.warn('Erro ao sincronizar custo total com servidor:', e);
+                }
+            }, 600);
+
+            const profitEl = document.getElementById('val-comparison-profit');
+            const subEl = document.getElementById('sub-comparison');
+
+            if (valStr === '' || paidVal <= 0) {
+                profitEl.textContent = 'R$ 0,00 (0%)';
+                profitEl.style.color = 'var(--text-muted)';
+                subEl.textContent = 'Digite quanto pagou ao lado';
+                return;
+            }
+
+            const diff = globalMinMarketPrice - paidVal;
+            const pct = paidVal > 0 ? ((diff / paidVal) * 100).toFixed(1) : 0;
+
+            if (diff >= 0) {
+                profitEl.textContent = `+${formatBRL(diff)} (+${pct}%)`;
+                profitEl.style.color = '#34d399';
+                subEl.textContent = `Vs valor mínimo (R$ ${globalMinMarketPrice.toFixed(2)})`;
+            } else {
+                profitEl.textContent = `${formatBRL(diff)} (${pct}%)`;
+                profitEl.style.color = '#f87171';
+                subEl.textContent = `Vs valor mínimo (R$ ${globalMinMarketPrice.toFixed(2)})`;
+            }
+        }
+
+        async function loadDashboard() {
+            try {
+                // Fetch Sales Config
+                let saleBinderIds = [];
+                try {
+                    const resSales = await smartFetch('/api/sales-config');
+                    if (resSales.ok) {
+                        const sData = await resSales.json();
+                        saleBinderIds = (sData.sale_binder_ids || []).map(String);
+                    } else {
+                        const localData = JSON.parse(localStorage.getItem('ligapokemon_sales_config') || '{"sale_binder_ids":[]}');
+                        saleBinderIds = (localData.sale_binder_ids || []).map(String);
+                    }
+                } catch (e) {}
+
+                // Fetch Costs Data from backend
+                let costMap = {};
+                let backendTotalCost = null;
+                try {
+                    const resCosts = await smartFetch('/api/costs');
+                    if (resCosts.ok) {
+                        const costsData = await resCosts.json();
+                        if (costsData) {
+                            costMap = costsData.cards_costs || {};
+                            backendTotalCost = costsData.total_collection_cost;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('Erro ao carregar custo total do backend:', e);
+                }
+
+                // Fetch Cards and calculate total purchase price from cards in main collection
+                globalCalculatedCardCost = 0;
+                globalHasCardsCost = false;
+                try {
+                    const resCards = await smartFetch('/api/cards');
+                    if (resCards.ok) {
+                        const cardsData = await resCards.json();
+                        const cardsList = cardsData.cards || cardsData || [];
+                        if (Array.isArray(cardsList)) {
+                            let totalFromCards = 0;
+                            let cardsWithCostCount = 0;
+                            cardsList.forEach(c => {
+                                const bId = String(c.binder_id || '');
+                                if (saleBinderIds.includes(bId)) return; // Ignora pastas de venda
+                                const key = getCardKey(c);
+                                const cost = costMap[key];
+                                if (cost !== undefined && cost !== null && !isNaN(cost)) {
+                                    totalFromCards += parseFloat(cost) * (c.quantity || 1);
+                                    cardsWithCostCount++;
+                                }
+                            });
+                            if (cardsWithCostCount > 0) {
+                                globalCalculatedCardCost = totalFromCards;
+                                globalHasCardsCost = true;
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.warn('Erro ao carregar cartas para calcular custo:', e);
+                }
+
+                // Restore/Set input value
+                const savedCostLocal = localStorage.getItem('total_collection_cost_paid');
+                const inputEl = document.getElementById('input-dashboard-cost');
+                const originSubEl = document.getElementById('sub-dashboard-cost-origin');
+
+                if (globalHasCardsCost) {
+                    // Preenche automaticamente com a soma do preço de compra das cartas se não houver um override manual diferente
+                    if (savedCostLocal !== null && savedCostLocal !== '' && parseFloat(savedCostLocal) !== globalCalculatedCardCost && backendTotalCost !== null && parseFloat(backendTotalCost) !== globalCalculatedCardCost) {
+                        inputEl.value = backendTotalCost !== null ? backendTotalCost : savedCostLocal;
+                    } else {
+                        inputEl.value = globalCalculatedCardCost.toFixed(2);
+                        localStorage.setItem('total_collection_cost_paid', globalCalculatedCardCost.toFixed(2));
+                    }
+                } else if (backendTotalCost !== null && backendTotalCost !== undefined) {
+                    if (inputEl) inputEl.value = backendTotalCost;
+                } else if (savedCostLocal !== null && savedCostLocal !== '' && inputEl) {
+                    inputEl.value = savedCostLocal;
+                }
+
+                // Fetch Latest Data
+                const resLatest = await smartFetch('/api/latest');
+                const latestData = await resLatest.json();
+
+                if (latestData && latestData.summary) {
+                    let binders = latestData.binders || [];
+                    
+                    // Exclude sale binders from main collection summary
+                    let mainBinders = binders.filter(b => !saleBinderIds.includes(String(b.id)));
+                    let saleBinders = binders.filter(b => saleBinderIds.includes(String(b.id)));
+
+                    let mainTotalCards = mainBinders.reduce((acc, b) => acc + (b.cards_count || 0), 0);
+                    let mainMinPrice = mainBinders.reduce((acc, b) => acc + (b.min_price_brl || 0), 0);
+                    let mainAvgPrice = mainBinders.reduce((acc, b) => acc + (b.avg_price_brl || b.min_price_brl || 0), 0);
+                    let mainMaxPrice = mainBinders.reduce((acc, b) => acc + (b.max_price_brl || b.min_price_brl || 0), 0);
+
+                    let saleTotalCards = saleBinders.reduce((acc, b) => acc + (b.cards_count || 0), 0);
+                    let saleMinPrice = saleBinders.reduce((acc, b) => acc + (b.min_price_brl || 0), 0);
+
+                    // If all binders are main or summary matches
+                    if (saleBinderIds.length === 0) {
+                        mainTotalCards = latestData.summary.total_cards;
+                        mainMinPrice = latestData.summary.menor_preco_brl;
+                        mainAvgPrice = latestData.summary.preco_medio_brl;
+                        mainMaxPrice = latestData.summary.maior_preco_brl;
+                    }
+
+                    globalMinMarketPrice = mainMinPrice;
+                    document.getElementById('val-max').textContent = formatBRL(mainMaxPrice);
+                    document.getElementById('val-avg').textContent = formatBRL(mainAvgPrice);
+                    document.getElementById('val-min').textContent = formatBRL(mainMinPrice);
+                    document.getElementById('val-total-cards').textContent = mainTotalCards.toLocaleString('pt-BR');
+                    
+                    const lastUpdatedEl = document.getElementById('last-updated');
+                    if (lastUpdatedEl) {
+                        let note = saleTotalCards > 0 ? ` (${saleTotalCards} cards à venda ignorados do total)` : '';
+                        lastUpdatedEl.textContent = `Atualizado em: ${latestData.timestamp || latestData.date}${note}`;
+                    }
+                    
+                    renderBreakdownCharts(latestData.breakdowns, mainBinders);
+                    updateDashboardProfitComparison();
+                    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+                        window.lucide.createIcons();
+                    }
+                }
+
+                // Fetch History Data
+                const resHistory = await smartFetch('/api/history');
+                const historyData = await resHistory.json();
+
+                if (Array.isArray(historyData)) {
+                    renderHistoryChart(historyData);
+                    renderHistoryTable(historyData);
+                }
+            } catch (err) {
+                console.error("Erro ao carregar dashboard:", err);
+            }
+        }
+
+        function renderHistoryChart(history) {
+            const ctx = document.getElementById('historyChart').getContext('2d');
+            if (historyChartInstance) historyChartInstance.destroy();
+
+            const labels = history.map(h => h.Date || h.Timestamp);
+            const minPrices = history.map(h => parseFloat(h.MinPriceBRL || 0));
+            const avgPrices = history.map(h => parseFloat(h.AvgPriceBRL || 0));
+            const maxPrices = history.map(h => parseFloat(h.MaxPriceBRL || 0));
+
+            historyChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels.length ? labels : ['Hoje'],
+                    datasets: [
+                        {
+                            label: 'Maior Valor (R$)',
+                            data: maxPrices.length ? maxPrices : [19826.17],
+                            borderColor: '#ec4899',
+                            backgroundColor: 'rgba(236, 72, 153, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.3
+                        },
+                        {
+                            label: 'Valor Médio (R$)',
+                            data: avgPrices.length ? avgPrices : [7023.24],
+                            borderColor: '#8b5cf6',
+                            backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.3
+                        },
+                        {
+                            label: 'Menor Valor (R$)',
+                            data: minPrices.length ? minPrices : [3848.97],
+                            borderColor: '#3b82f6',
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.3
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 12 } } }
+                    },
+                    scales: {
+                        x: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+                    }
+                }
+            });
+        }
+
+        function renderBreakdownCharts(breakdowns, binders) {
+            if (!breakdowns) return;
+
+            // Binder / Collection Distribution Chart
+            if (binders && binders.length > 0) {
+                const ctx = document.getElementById('binderChart').getContext('2d');
+                if (binderChartInstance) binderChartInstance.destroy();
+
+                const validBinders = binders.filter(b => b.cards_count > 0);
+                binderChartInstance = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: validBinders.map(b => b.name),
+                        datasets: [{
+                            data: validBinders.map(b => b.cards_count),
+                            backgroundColor: ['#ec4899', '#8b5cf6', '#3b82f6', '#10b981', '#f59e0b', '#06b6d4', '#a855f7']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'right', labels: { color: '#94a3b8', boxWidth: 12 } },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const b = validBinders[context.dataIndex];
+                                        return `${b.name}: ${b.cards_count} cards (${formatBRL(b.avg_price_brl || b.min_price_brl)})`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Rarity Chart
+            if (breakdowns.rarities) {
+                const ctx = document.getElementById('rarityChart').getContext('2d');
+                if (rarityChartInstance) rarityChartInstance.destroy();
+                rarityChartInstance = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(breakdowns.rarities),
+                        datasets: [{
+                            data: Object.values(breakdowns.rarities),
+                            backgroundColor: ['#8b5cf6', '#ec4899', '#3b82f6', '#10b981', '#f59e0b', '#06b6d4', '#a855f7']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'right', labels: { color: '#94a3b8', boxWidth: 12 } } }
+                    }
+                });
+            }
+
+            // Language Chart
+            if (breakdowns.languages) {
+                const ctx = document.getElementById('languageChart').getContext('2d');
+                if (languageChartInstance) languageChartInstance.destroy();
+                languageChartInstance = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(breakdowns.languages),
+                        datasets: [{
+                            data: Object.values(breakdowns.languages),
+                            backgroundColor: ['#10b981', '#f59e0b', '#ec4899', '#3b82f6']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'right', labels: { color: '#94a3b8', boxWidth: 12 } } }
+                    }
+                });
+            }
+
+            // Quality Chart
+            if (breakdowns.qualities) {
+                const ctx = document.getElementById('qualityChart').getContext('2d');
+                if (qualityChartInstance) qualityChartInstance.destroy();
+                qualityChartInstance = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(breakdowns.qualities),
+                        datasets: [{
+                            label: 'Qtd Cards',
+                            data: Object.values(breakdowns.qualities),
+                            backgroundColor: '#3b82f6',
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            x: { ticks: { color: '#94a3b8' }, grid: { display: false } },
+                            y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+                        }
+                    }
+                });
+            }
+
+            // Extras Chart
+            if (breakdowns.extras) {
+                const ctx = document.getElementById('extrasChart').getContext('2d');
+                if (extrasChartInstance) extrasChartInstance.destroy();
+                extrasChartInstance = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(breakdowns.extras),
+                        datasets: [{
+                            label: 'Qtd Cards',
+                            data: Object.values(breakdowns.extras),
+                            backgroundColor: '#f59e0b',
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            x: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                            y: { ticks: { color: '#94a3b8' }, grid: { display: false } }
+                        }
+                    }
+                });
+            }
+        }
+
+        function renderHistoryTable(history) {
+            const tbody = document.getElementById('history-table-body');
+            if (!history || history.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted);">Nenhum histórico gravado ainda.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = history.slice().reverse().map(h => `
+                <tr>
+                    <td><strong>${h.Date || h.Timestamp}</strong></td>
+                    <td><span class="badge-pill badge-purple">${h.TotalCards || 0} cards</span></td>
+                    <td style="color: #60a5fa;">${formatBRL(parseFloat(h.MinPriceBRL || 0))}</td>
+                    <td style="color: #c084fc; font-weight: 600;">${formatBRL(parseFloat(h.AvgPriceBRL || 0))}</td>
+                    <td style="color: #f472b6; font-weight: 700;">${formatBRL(parseFloat(h.MaxPriceBRL || 0))}</td>
+                    <td><span class="badge-pill badge-emerald">Concluído</span></td>
+                </tr>
+            `).join('');
+        }
+
+        async function triggerScraper() {
+            const btn = document.getElementById('btn-run-scraper');
+            const icon = document.getElementById('scraper-icon');
+            const btnText = document.getElementById('scraper-btn-text');
+
+            if (!IS_LOCAL_SERVER) {
+                alert("A extração com o navegador precisa ser disparada a partir do seu computador local (http://127.0.0.1:5050). No ambiente web, as atualizações são automáticas após a sincronização local.");
+                return;
+            }
+
+            btn.disabled = true;
+            icon.classList.add('spinning');
+            btnText.textContent = 'Extraindo Coleção...';
+
+            try {
+                const res = await fetch('/api/run-scraper', { method: 'POST' });
+                const resData = await res.json();
+                if (!res.ok) {
+                    alert(resData.message || "Operação já em andamento.");
+                    btn.disabled = false;
+                    icon.classList.remove('spinning');
+                    btnText.textContent = 'Atualizar Agora';
+                    return;
+                }
+
+                // Polling inteligente até o scraper e deploy finalizarem
+                let pollCount = 0;
+                const pollInterval = setInterval(async () => {
+                    pollCount++;
+                    try {
+                        const statusRes = await fetch('/api/session-status?_t=' + Date.now());
+                        if (statusRes.ok) {
+                            const statusData = await statusRes.json();
+                            const isRunning = statusData.task_state && statusData.task_state.is_running;
+                            if (!isRunning || pollCount > 90) {
+                                clearInterval(pollInterval);
+                                btnText.textContent = 'Atualizando Tela...';
+                                await loadDashboard();
+                                btn.disabled = false;
+                                icon.classList.remove('spinning');
+                                btnText.textContent = 'Atualizar Agora';
+                            }
+                        }
+                    } catch (e) {}
+                }, 2500);
+            } catch (err) {
+                alert("Erro ao disparar scraper: " + err);
+                btn.disabled = false;
+                icon.classList.remove('spinning');
+                btnText.textContent = 'Atualizar Agora';
+            }
+        }
+
+        // Initial Load
+        loadDashboard();
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>

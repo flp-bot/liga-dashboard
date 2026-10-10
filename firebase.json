@@ -1,0 +1,115 @@
+{
+  "hosting": {
+    "public": ".",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "__pycache__/**",
+      "user_data/**",
+      "*.py",
+      "*.bat",
+      "*.ps1"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/latest",
+        "destination": "/data/collection_latest.json"
+      },
+      {
+        "source": "/api/cards",
+        "destination": "/data/cards_latest.json"
+      },
+      {
+        "source": "/api/costs",
+        "destination": "/data/cards_costs.json"
+      },
+      {
+        "source": "/api/history",
+        "destination": "/data/history_log.json"
+      },
+      {
+        "source": "/api/card-history",
+        "destination": "/data/cards_history.json"
+      },
+      {
+        "source": "/api/session-status",
+        "destination": "/data/session_status.json"
+      },
+      {
+        "source": "/api/sales-config",
+        "destination": "/data/sales_config.json"
+      },
+      {
+        "source": "/api/registered-stores",
+        "destination": "/data/registered_stores.json"
+      },
+      {
+        "source": "/api/store-cards",
+        "destination": "/data/store_cards_latest.json"
+      },
+      {
+        "source": "/api/status",
+        "destination": "/data/sync_status.json"
+      },
+      {
+        "source": "/",
+        "destination": "/dashboard.html"
+      },
+      {
+        "source": "/collections",
+        "destination": "/collections.html"
+      },
+      {
+        "source": "/sales",
+        "destination": "/sales.html"
+      },
+      {
+        "source": "/vendas",
+        "destination": "/sales.html"
+      },
+      {
+        "source": "/stores",
+        "destination": "/stores.html"
+      },
+      {
+        "source": "/lojas",
+        "destination": "/stores.html"
+      },
+      {
+        "source": "/dashboard",
+        "destination": "/dashboard.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.json",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/api/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(html|js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, must-revalidate"
+          }
+        ]
+      }
+    ]
+  }
+}
