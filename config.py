@@ -1,8 +1,19 @@
 import os
+import sys
 from pathlib import Path
 
-# Base Directory
+# Base Directory & Structure
 BASE_DIR = Path(__file__).resolve().parent
+BACKEND_DIR = BASE_DIR / "backend"
+FRONTEND_DIR = BASE_DIR / "frontend"
+SCRIPTS_DIR = BASE_DIR / "scripts"
+TOOLS_SCRATCH_DIR = BASE_DIR / "tools_scratch"
+
+# Add directories to sys.path so modules find each other seamlessly
+for path in [BASE_DIR, BACKEND_DIR, SCRIPTS_DIR]:
+    path_str = str(path)
+    if path_str not in sys.path:
+        sys.path.insert(0, path_str)
 
 # Credentials
 LOGIN_EMAIL = os.getenv("LIGA_EMAIL", "fe0rkut@gmail.com")
@@ -22,6 +33,7 @@ COSTS_FILE = DATA_DIR / "cards_costs.json"
 CARD_HISTORY_FILE = DATA_DIR / "cards_history.json"
 SALES_CONFIG_FILE = DATA_DIR / "sales_config.json"
 REGISTERED_STORES_FILE = DATA_DIR / "registered_stores.json"
+CARD_SETS_MAP_FILE = DATA_DIR / "card-sets-map.json"
 
 # Ensure directories exist
 DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -47,4 +59,5 @@ def save_credentials(email, password):
     with open(CREDENTIALS_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     return True
+
 

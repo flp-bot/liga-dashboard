@@ -13,7 +13,7 @@ echo (Com opcao de executar na primeira inicializacao caso o PC estivesse deslig
 echo Diretorio: %SCRIPT_DIR%
 echo.
 
-schtasks /Create /TN "%TASK_NAME%" /TR "cmd.exe /c cd /d %SCRIPT_DIR% && %PYTHON_EXEC% scraper.py >> data\scheduler.log 2>&1" /SC DAILY /ST 20:00 /F
+schtasks /Create /TN "%TASK_NAME%" /TR "cmd.exe /c cd /d %SCRIPT_DIR% && %PYTHON_EXEC% backend\scraper.py >> data\scheduler.log 2>&1" /SC DAILY /ST 20:00 /F
 
 if %ERRORLEVEL% EQU 0 (
     echo.
@@ -28,3 +28,4 @@ if %ERRORLEVEL% EQU 0 (
 
 echo.
 pause
+

@@ -727,5 +727,32 @@
     "AvgPriceBRL": "25270.11",
     "MaxPriceBRL": "73217.15",
     "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-10 19:03:39",
+    "Date": "2026-10-10",
+    "TotalCards": "2690",
+    "MinPriceBRL": "14503.23",
+    "AvgPriceBRL": "25270.11",
+    "MaxPriceBRL": "73217.15",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-10 20:00:01",
+    "Date": "2026-10-10",
+    "TotalCards": "2690",
+    "MinPriceBRL": "14503.23",
+    "AvgPriceBRL": "25270.11",
+    "MaxPriceBRL": "73217.15",
+    "BindersCount": "8"
+  },
+  {
+    "Timestamp": "2026-10-11 09:37:40",
+    "Date": "2026-10-11",
+    "TotalCards": "2690",
+    "MinPriceBRL": "14506.83",
+    "AvgPriceBRL": "25254.34",
+    "MaxPriceBRL": "73063.65",
+    "BindersCount": "8"
   }
 ]

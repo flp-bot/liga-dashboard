@@ -39243,3 +39243,42 @@ Abrindo o Dashboard no navegador...
 127.0.0.1 - - [09/Oct/2026 23:30:43] "OPTIONS /api/costs HTTP/1.1" 200 -
 [SERVER POST] clean='/api/costs'
 127.0.0.1 - - [09/Oct/2026 23:30:43] "POST /api/costs HTTP/1.1" 200 -
+============================================================
+      LIGAPOKEMON - SCRAPER DIÁRIO DA COLEÇÃO [2026-10-10 20:00:01]
+============================================================
+Iniciando navegador...
+Acessando: https://www.ligapokemon.com.br/?view=colecao/colecao
+
+[OK] Métricas Extraídas: 1690 cartas | R$ 48,033.09
+Baixando lista de cartas da pasta 'Fofinha 😍' (ID=563667)...
+[20:00:15] [OK]   [OK] 1378 cartas lidas na pasta 'Fofinha 😍'.
+Baixando lista de cartas da pasta 'Escuridão absoluta' (ID=559223)...
+[20:00:18] [OK]   [OK] 177 cartas lidas na pasta 'Escuridão absoluta'.
+Baixando lista de cartas da pasta 'Para vendas' (ID=578140)...
+[20:00:21] [OK]   [OK] 247 cartas lidas na pasta 'Para vendas'.
+Baixando lista de cartas da pasta 'Caos Ascendente' (ID=558413)...
+[20:00:24] [OK]   [OK] 158 cartas lidas na pasta 'Caos Ascendente'.
+Baixando lista de cartas da pasta 'Escolhas' (ID=565078)...
+[20:00:26] [OK]   [OK] 140 cartas lidas na pasta 'Escolhas'.
+Baixando lista de cartas da pasta 'Equilibrio Perfeito' (ID=562194)...
+[20:00:29] [OK]   [OK] 126 cartas lidas na pasta 'Equilibrio Perfeito'.
+Baixando lista de cartas da pasta '30 Anos' (ID=604173)...
+[20:00:32] [OK]   [OK] 125 cartas lidas na pasta '30 Anos'.
+Baixando lista de cartas da pasta 'Promos Mega Evolução' (ID=586811)...
+[20:00:35] [OK]   [OK] 89 cartas lidas na pasta 'Promos Mega Evolução'.
+
+[OK] Métricas Finais (Com Coleções Compartilhadas): 2690 cartas | R$ 25,270.11 (médio)
+============================================================
+Scraper concluído com sucesso!
+============================================================
+============================================================
+      SINCRONIZANDO DADOS COM FIREBASE CLOUD [2026-10-10 20:00:36]
+============================================================
+  [OK] Arquivos estáticos de dados preparados!
+  [DEPLOY] Enviando atualizações para o Firebase Hosting (https://ligapokemon-dashboard.web.app)...
+  [OK] Firebase Hosting atualizado com sucesso!
+  Acesse online em: https://ligapokemon-dashboard.web.app
+============================================================
+Sincronização Firebase concluída! Acesse: https://ligapokemon-dashboard.web.app
+============================================================
+Abrindo o Dashboard no navegador...

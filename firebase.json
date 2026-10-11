@@ -55,31 +55,31 @@
       },
       {
         "source": "/",
-        "destination": "/dashboard.html"
+        "destination": "/frontend/dashboard.html"
       },
       {
         "source": "/collections",
-        "destination": "/collections.html"
+        "destination": "/frontend/collections.html"
       },
       {
         "source": "/sales",
-        "destination": "/sales.html"
+        "destination": "/frontend/sales.html"
       },
       {
         "source": "/vendas",
-        "destination": "/sales.html"
+        "destination": "/frontend/sales.html"
       },
       {
         "source": "/stores",
-        "destination": "/stores.html"
+        "destination": "/frontend/stores.html"
       },
       {
         "source": "/lojas",
-        "destination": "/stores.html"
+        "destination": "/frontend/stores.html"
       },
       {
         "source": "/dashboard",
-        "destination": "/dashboard.html"
+        "destination": "/frontend/dashboard.html"
       }
     ],
     "headers": [

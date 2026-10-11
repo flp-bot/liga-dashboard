@@ -1,7 +1,7 @@
 # Script de Agendamento no Windows Task Scheduler para LigaPokemon Scraper
 $TaskName = "LigaPokemonScraper"
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$Action = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c cd /d `"$ScriptDir`" && python scraper.py >> data\scheduler.log 2>&1"
+$Action = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c cd /d `"$ScriptDir`" && python backend\scraper.py >> data\scheduler.log 2>&1"
 
 # Horário agendado: 20:00 (8:00 PM)
 $Trigger = New-ScheduledTaskTrigger -Daily -At 8:00PM
@@ -24,3 +24,4 @@ try {
 } catch {
     Write-Host "`n[ERRO] Falha ao criar a tarefa: $_" -ForegroundColor Red
 }
+

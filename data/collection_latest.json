@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-10 16:05:52",
-  "date": "2026-10-10",
+  "timestamp": "2026-10-11 09:37:40",
+  "date": "2026-10-11",
   "summary": {
-    "menor_preco_brl": 14503.23,
-    "preco_medio_brl": 25270.11,
-    "maior_preco_brl": 73217.15,
+    "menor_preco_brl": 14506.83,
+    "preco_medio_brl": 25254.34,
+    "maior_preco_brl": 73063.65,
     "total_cards": 2690
   },
   "binders": [
@@ -12,65 +12,65 @@
       "id": "563667",
       "name": "Fofinha 😍",
       "cards_count": 1379,
-      "min_price_brl": 6701.27,
-      "avg_price_brl": 10374.81,
-      "max_price_brl": 24869.06
+      "min_price_brl": 6703.28,
+      "avg_price_brl": 10388.6,
+      "max_price_brl": 24943.82
     },
     {
       "id": "559223",
       "name": "Escuridão absoluta",
       "cards_count": 324,
-      "min_price_brl": 558.53,
-      "avg_price_brl": 1380.46,
-      "max_price_brl": 4593.49
+      "min_price_brl": 557.45,
+      "avg_price_brl": 1378.15,
+      "max_price_brl": 4659.58
     },
     {
       "id": "578140",
       "name": "Para vendas",
       "cards_count": 323,
-      "min_price_brl": 1485.05,
-      "avg_price_brl": 2664.62,
-      "max_price_brl": 6021.66
+      "min_price_brl": 1487.74,
+      "avg_price_brl": 2671.59,
+      "max_price_brl": 6029.82
     },
     {
       "id": "558413",
       "name": "Caos Ascendente",
       "cards_count": 160,
-      "min_price_brl": 428.68,
-      "avg_price_brl": 929.16,
+      "min_price_brl": 428.87,
+      "avg_price_brl": 928.3,
       "max_price_brl": 6962.85
     },
     {
       "id": "565078",
       "name": "Escolhas",
       "cards_count": 156,
-      "min_price_brl": 1088.83,
-      "avg_price_brl": 1870.42,
-      "max_price_brl": 3777.57
+      "min_price_brl": 1086.74,
+      "avg_price_brl": 1857.22,
+      "max_price_brl": 3764.22
     },
     {
       "id": "562194",
       "name": "Equilibrio Perfeito",
       "cards_count": 134,
-      "min_price_brl": 269.61,
-      "avg_price_brl": 559.47,
-      "max_price_brl": 1268.39
+      "min_price_brl": 271.24,
+      "avg_price_brl": 560.33,
+      "max_price_brl": 1269.14
     },
     {
       "id": "604173",
       "name": "30 Anos",
       "cards_count": 125,
-      "min_price_brl": 1406.07,
-      "avg_price_brl": 2858.86,
+      "min_price_brl": 1392.96,
+      "avg_price_brl": 2831.77,
       "max_price_brl": 11682.07
     },
     {
       "id": "586811",
       "name": "Promos Mega Evolução",
       "cards_count": 89,
-      "min_price_brl": 2565.19,
-      "avg_price_brl": 4632.31,
-      "max_price_brl": 14042.06
+      "min_price_brl": 2578.55,
+      "avg_price_brl": 4638.38,
+      "max_price_brl": 13752.15
     }
   ],
   "breakdowns": {
@@ -122,8 +122,8 @@
       "Foil, Promo, Pre Release": 15
     },
     "price_ranges": {
-      "R$ 5,00 a R$ 50,00": 362,
-      "Até R$ 5,00": 2266,
+      "R$ 5,00 a R$ 50,00": 360,
+      "Até R$ 5,00": 2268,
       "Acima de R$ 50,00": 62
     },
     "sets": {
